@@ -12,7 +12,8 @@ check boxs: ibox
 
 */
 :root{
-    --main-color: rgb(58, 29, 223);/*Color principar se usa var(--main-color)*/
+    --main-color: rgb(94, 192, 231);/*Color principar se usa var(--main-color)*/
+    --s-color: rgb(255, 255, 255);/*Color de contraste*/
 }
 
 *{/*Inicializacion de elementos*/
@@ -68,32 +69,39 @@ check boxs: ibox
 }
 
 [class^="header"]{
-    height: 1in ;
+    height: 2cm ;
     padding: 5px;
     
 }
 
-[class*="servl"]{
-    width: 300px;
+div[class*="serv"]>*{
+    margin: 5px;
 }
 
-[class*="servr"]{
-    width: 300px;
-}
 
-div[class*=header]{
-    height: inherit;
+header>h1{
+    position: relative;
+    color: var(--s-color);
+    bottom: 30%;
+    font-size: 50px;
+    left: 35%;
 }
 
 [class*="-p"]{
     border: 2px var(--main-color) solid;
     border-radius: 5px;
     background-color: var(--main-color);
+    color: var(--s-color);
 }
 
 [class*="borderg"]{
     border-radius: 15px;
     border: 3px var(--main-color) solid;
+}
+
+[class*="borderl"]{
+    border-radius: 5px;
+    border: 2px var(--main-color) solid;
 }
 
 [class*="center"]{ 
@@ -113,16 +121,29 @@ div[class*=header]{
 }
 
 [class*="iconw"]{/*Icono por ancho*/
-    height: auto;
     width: inherit;
 }
 
-[class$="serv"]{
+div[class^="serv"]{
     width: fit-content;
+    height: min-content;
     margin: 40px auto; 
-    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
+
+div[class^="serv"]>div{
+    height: 100%;
+}
+
 [class^="bttn"]{
     margin: 2px;
     padding: 2px;
+    font-size: 16px;
+}
+
+[class*="text"]{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
