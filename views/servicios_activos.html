@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styless/styless.css">
     <link rel="icon" href="../assets/img/icon.png">
-    <title>Document</title>
+    <title>DonkeyRoads-Servicios activos</title>
 </head>
 <body>
-    (header>h1)+(main>div[class="bordg"]>(div>img[class="icon"]+div>h3+p+(button[class="-p"]*4))+p+input[type="checkbox"])+footer
-    <header class="-pborderg">
-        <div>
-            <img src="../assets/img/perfil.jpg" alt="perfil" class="icon">
-        </div>
-        <div class="center">
-                <h1 style="display: inline;">DonkeyRoads</h1>
-                <img src="../assets/img/icon.png" alt="logo" class="icon">
+    <!--
+    (header[class="header"]>img[class="iconh"]+div[class="line-center"]>h1{DonkeyRoads}+img[class="icon"])+(main[class="center"]>h2+(div>iframe[class="iconw"]+h4*3+input[type="checkbox"]+label)+(div[class="right"]>h3+h4*2+div>button[class="-p"]*4))+footer-->
+    <header class="header-p" >
+        <img src="../assets/img/perfil.jpg" alt="perfil" class="iconh">
+        <div class="line-center-header ">
+            <h1 class="line">DonkeyRoads</h1>
+            <img src="../assets/img/icon.png" alt="logo" class="icon-line">
         </div>
     </header>
-    <main>
-        <div class="bordergservicio">
-            <div class="serviciohead">
-                <img src="../assets/img/perfil.jpg" alt="cliente" class="icon">
-                <div class="line">
-                    <h3>Nombre cliente</h3>
-                    <p>Fecha de servicio <br> Precio del servicio</p>
-                    <button class="-pservicio"></button><button class="-pservicio"></button><button class="-pservicio"></button><button class="-pservicio"></button></div>
+    <main class="center">
+        <h2>Servicios activos</h2>
+        <div class="borderg-serv">
+            <div class="left-line-servl">
+                <iframe class="iconw" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1988.719076833725!2d-74.0930589!3d4.5147809!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3fa356d4e41fbb%3A0xf4abb8d633e3aedd!2sHelader%C3%ADa%20y%20fruter%C3%ADa%20LECHE%20Y%20MIEL!5e0!3m2!1ses!2sco!4v1662220930434!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div>
-                <p></p>
-                <input class="ibox" id="personal_1" type="checkbox">
-                <label for="personal_1">Personal adicional de carga</label>
+            <div class="left-line-servr">
+                <h3>Nombre de transportador/client</h3>
+                <h4>Estado de servicio</h4>
+                <h4>Fecha y hora del servicio</h4>
+                <h4>Peso de la carga:</h4>
+                <h4>Volumen de la carga:</h4>
+                <h4>Tipo de carga:</h4>
+                <input id="personal"type="checkbox">
+                <label for="personal">Personal de carga adicional</label> 
+                <div><button class="bttn-p">Chat</button><button class="bttn-p">Llamar</button><button class="bttn-p">Mapa</button><button class="bttn-borderl">Cancelar</button></div>
             </div>
         </div>
     </main>

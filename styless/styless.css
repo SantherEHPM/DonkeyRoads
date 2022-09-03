@@ -7,13 +7,16 @@ cosas centrados: (que contenga)center
 cosas  a la derecha: (que contenga)right
 cosas con borde grueso: (que contenga) bordg
 cosas con borde ligero: (que contenga) bordl
-cosas con el color principal de relleno:(que contenga) -p
 links: lin
 check boxs: ibox
 
 */
-*{
-    margin: 2px;
+:root{
+    --main-color: rgb(58, 29, 223);/*Color principar se usa var(--main-color)*/
+}
+
+*{/*Inicializacion de elementos*/
+    margin: 0;
     padding: 0;
 }
 /**Menú*/
@@ -21,7 +24,7 @@ check boxs: ibox
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: crimson;
+    background-color:var(--main-color);
     color: black;
 }
 .main-menu img{
@@ -53,69 +56,73 @@ check boxs: ibox
  }
 
 
-button[class$="servicio"]{
-    padding: 1%;
-    height: auto;
-    width: 20%;
-    margin: 10px;
-}
-
-div[class="serviciohead"]{
-    height: 2in;
-}
-
-div[class$="servicio"]{
-    width: 60%;
-    height: auto;
-    padding: 2%;
-}
-
-main{
-    margin: 10px;
-    justify-content: center;
-}
-
 .ibox{
     margin: 10px;
 }
 
-div{
-    width: inherit;
-    height: inherit;
-}
 
 [class*="line"]{
     /*configurar elemetos como tipo linea*/
-    display: inline;
+    display: inline-block;
 
 }
 
-header{
-    height: 1in;
-    align-items: center;
-    padding: 1%;
+[class^="header"]{
+    height: 1in ;
+    padding: 5px;
+    
 }
 
-header>div{
-    display: inline;
-    width: inherit;
+[class*="servl"]{
+    width: 300px;
+}
+
+[class*="servr"]{
+    width: 300px;
+}
+
+div[class*=header]{
     height: inherit;
 }
 
 [class*="-p"]{
-    border: none;
-    background: crimson;
+    border: 2px var(--main-color) solid;
+    border-radius: 5px;
+    background-color: var(--main-color);
 }
 
 [class*="borderg"]{
-    border: 3px crimson solid;
-}
-[class*="center"]{ 
-    justify-content: center;
+    border-radius: 15px;
+    border: 3px var(--main-color) solid;
 }
 
-.icon{
+[class*="center"]{ 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+[class*="left"]{ 
+    justify-content: left;
+    text-align: left;
+}
+
+[class*="iconh"]{/*Icono por altura*/
     height: inherit;
     width: auto;
 }
 
+[class*="iconw"]{/*Icono por ancho*/
+    height: auto;
+    width: inherit;
+}
+
+[class$="serv"]{
+    width: fit-content;
+    margin: 40px auto; 
+    padding: 5px;
+}
+[class^="bttn"]{
+    margin: 2px;
+    padding: 2px;
+}
