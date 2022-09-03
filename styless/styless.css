@@ -12,4 +12,35 @@ links: lin
 check boxs: ibox
 
 */
+*{
+    margin: 0;
+    padding: 0;
+}
+.servicio{
+    width: 3in;
+}
 
+header{
+    height: 1in;
+    align-items: center;
+    padding: 1%;
+}
+
+header>div{
+    display: inline;
+    width: inherit;
+    height: inherit;
+}
+
+[class*="-p"]{
+    background: crimson;
+}
+
+[class*="center"]{
+    justify-content: center;
+}
+
+.icon{
+    height: inherit;
+    width: auto;
+}
