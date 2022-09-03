@@ -5,7 +5,7 @@ boton: bttn
 imagenes de icono: icon
 cosas centrados: (que contenga)center
 cosas  a la derecha: (que contenga)right
-cosas con borde gureso: (que contenga) bordg
+cosas con borde grueso: (que contenga) bordg
 cosas con borde ligero: (que contenga) bordl
 cosas con el color principal de relleno:(que contenga) -p
 links: lin
@@ -16,6 +16,42 @@ check boxs: ibox
     margin: 2px;
     padding: 0;
 }
+/**Menú*/
+.main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: crimson;
+    color: black;
+}
+.main-menu img{
+    align-self: flex-start;
+}
+.opt-menu{
+    justify-content: flex-end;
+    width: 90%;
+ }
+ .opt-menu li{
+     list-style: none;
+     width: 15%;
+ }
+ .opt-menu a:hover{
+     background-color: white;
+     color: black;
+     border: 5px white solid;
+     border-radius: 30px;
+ }
+ .fa-user .fa-solid{
+    font-size: 30px; 
+    width: 40px;
+    color: black;
+ }
+ .fa-magnifying-glass-location .fa-solid{
+    font-size: 30px; 
+    width: 40px;
+    color: black;
+ }
+
 
 button[class$="servicio"]{
     padding: 1%;
@@ -82,3 +118,4 @@ header>div{
     height: inherit;
     width: auto;
 }
+
