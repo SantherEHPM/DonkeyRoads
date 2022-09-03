@@ -13,11 +13,45 @@ check boxs: ibox
 
 */
 *{
-    margin: 0;
+    margin: 2px;
     padding: 0;
 }
-.servicio{
-    width: 3in;
+
+button[class$="servicio"]{
+    padding: 1%;
+    height: auto;
+    width: 20%;
+    margin: 10px;
+}
+
+div[class="serviciohead"]{
+    height: 2in;
+}
+
+div[class$="servicio"]{
+    width: 60%;
+    height: auto;
+    padding: 2%;
+}
+
+main{
+    margin: 10px;
+    justify-content: center;
+}
+
+.ibox{
+    margin: 10px;
+}
+
+div{
+    width: inherit;
+    height: inherit;
+}
+
+[class*="line"]{
+    /*configurar elemetos como tipo linea*/
+    display: inline;
+
 }
 
 header{
@@ -33,10 +67,14 @@ header>div{
 }
 
 [class*="-p"]{
+    border: none;
     background: crimson;
 }
 
-[class*="center"]{
+[class*="borderg"]{
+    border: 3px crimson solid;
+}
+[class*="center"]{ 
     justify-content: center;
 }
 
