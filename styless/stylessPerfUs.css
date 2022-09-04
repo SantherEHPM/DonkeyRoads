@@ -1,0 +1,74 @@
+h1{
+    color: aliceblue;
+}
+.perfil-usuario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(34, 33, 33);
+}
+.perfil-usuario .header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(37, 39, 39) ;
+    margin-bottom: 1rem;
+}
+.perfil-usuario .portada{
+    display: block;
+    position: relative;
+    width: 0%;
+    height: 17rem;
+    background-color: rgb(107, 183, 228);
+}
+.perfil-usuario .avatar{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid rgb(60, 70, 70);
+    background-color: rgb(197, 197, 197);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -35px;
+    left: calc(50% - 90px);
+}
+.NomUsuario .texto #ApUsuario .NumUsuario{
+    text-align: left;
+    height: 20px;
+    color: white;
+}
+.text{
+    font-size: 20px;
+}
+.perfil-usuario #boton-editar{
+    right: 1rem;
+    top: 1rem;
+    border: 0;
+    padding: 12px 15px;
+    background-color: rgb(44, 47, 49);
+    color: aliceblue;
+    position: absolute;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(64, 206, 163, 0.2);
+}
+.perfil-usuario .body{
+    width: 100%;
+    color: aliceblue;
+}
+.perfil-usuario .bio, 
+.perfil-usuario .footer{
+    display: block;
+    padding: 1rem;
+    flex-wrap: wrap;
+    box-shadow: 0 0 12px rgba(1, 243, 183, 0.2);
+    background-color: rgb(37, 39, 39);
+    width: 97%;
+}
+
