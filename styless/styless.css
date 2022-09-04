@@ -186,3 +186,35 @@ nav>div{
     margin-right: 50px;
     margin-left: 50pxpx;
 }
+
+main[class="llamando"]{
+    height: 800px;
+}
+
+div[class="llamada"]{
+    position: relative;
+    top:15%;
+}
+
+div[class*="mainOptions"]{
+    position: relative;
+    top: 70px;
+}
+/*
+#silence{
+    position: relative;
+    left: 5;
+}
+#alatavoz{
+    position: relative;
+    left: 50%;
+}
+
+#pause{
+    position: relative;
+    left: 75%;
+}*/
+
+main[class="llamando"] div[class*="space"]{
+    width: 10%;
+}
