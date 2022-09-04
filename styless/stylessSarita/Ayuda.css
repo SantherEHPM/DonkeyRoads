@@ -13,28 +13,20 @@
 .container /*.row1*/{
     width: 90%;
     margin: 0px auto;
-    box-shadow: 0 0 15px -1px rgb(0, 0, 0, .1);
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.116);
     padding: 30px;
 }
-
-/*.container .row{
-    width: 90%;
-    margin: 0px auto;
-    box-shadow: 0 0 15px -1px rgb(0, 0, 0, .1);
-    padding: 30px;
-}*/
 .pregunta{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;   
 }
 .respuesta{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;   
 }
 .container-ayuda .item-ayuda{
     box-shadow: 0 0 15px -1px rgb(0, 0, 0, .2);
     margin-bottom: 20px;
-    padding-bottom: 20px;
     border-radius: 10px;
 }
 .container-ayuda .item-ayuda .pregunta{
@@ -75,13 +67,20 @@
     height: 0;
     transition: .4s;
 }
-/*.row2{
-    width: 90%;
-    margin: 10px auto;
-    box-shadow: 0 0 15px -1px rgb(0, 0, 0, .1);
+.container #comunic{
+    font-size: 20px;
+    right: 100px;
+    bottom: 100px;
+    border: 0;
+    padding: 12px 15px;
+    background-color: rgb(44, 47, 49);
+    color: aliceblue;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(6, 22, 17, 0.2);
 }
-.row3{
-    width: 90%;
-    margin: 10px auto;
-    box-shadow: 0 0 15px -1px rgb(0, 0, 0, .1);
-}*/
+.dudas{
+    text-align: center;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
