@@ -12,7 +12,7 @@ check boxs: ibox
 
 */
 :root{
-    --main-color: rgb(94, 192, 231);/*Color principar se usa var(--main-color)*/
+    --main-color: rgb(219, 163, 9);/*Color principar se usa var(--main-color)*/
     --s-color: rgb(255, 255, 255);/*Color de contraste*/
 }
 
@@ -96,11 +96,13 @@ header>h1{
 [class*="borderg"]{
     border-radius: 15px;
     border: 3px var(--main-color) solid;
+    background-color: var(--s-color);
 }
 
 [class*="borderl"]{
     border-radius: 5px;
     border: 2px var(--main-color) solid;
+    background-color: var(--s-color);
 }
 
 [class*="center"]{ 
@@ -215,6 +217,25 @@ div[class*="mainOptions"]{
     left: 75%;
 }*/
 
-main[class="llamando"] div[class*="space"]{
-    width: 10%;
+div[class*="space"]{
+    width: 20%;
+}
+
+main[class="disponible"]{
+    height: 85vh;
+}
+main[class="disponible"]>div[id="menu"]{
+    padding: 10px;
+    position: relative;
+    height: auto;
+    width: 28vw ;
+    bottom: 100%;
+    left: 70%;
+}
+
+main[class="disponible"] div[class*="-menu"]{
+    padding: 5px;
+    width: 97%;
+    margin-bottom: 5px;
+
 }
