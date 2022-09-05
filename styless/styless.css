@@ -21,17 +21,7 @@ check boxs: ibox
     padding: 0;
 }
 /**Menú*/
-.main-menu{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-<<<<<<< HEAD
-    background-color: blue;
-=======
-    background-color:var(--main-color);
->>>>>>> 180c010f717e4a2f28ef8f59ef0d9b2f9353a0d6
-    color: black;
-}
+
 .main-menu img{
     align-self: center;
 }
