@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DonkeyRoads</title>
+    <link rel="icon" type="image/png" href="./assets/img/icon.png">
+    <link rel="stylesheet" href="./styless/styless.css">
+</head>
+
+<body>
+    <!--MENÚ-->
+    <nav class="main-menu">
+        <a href="./index.html"><img src="./assets/DonkeyRoads.png"></a>
+        
+        
+        <ul class="main-menu opt-menu">
+            <li><a href="./views/login.html" target="_blank">Iniciar Sesión</a></li>
+            <li><a href="./views/mapa.html" target="_blank">Buscar</a></li>
+        </ul>
+    
+    
+    </nav>
+
+    <p>Seleccione y escriba de acuerdo a su tipo de documento.</p>
+    <h4>Tipo de documento:</h4>
+    <select name="typeDocument" id="typeDocument">
+        <option value="nada" select="selected">Seleccione tipo de documento</option>
+        <option value="cc">Cédula de Ciudadanía</option>
+        <option value="ce">Cédula Extranjera</option>
+    </select>
+    <h4>Número de documento:</h4>
+    <input type="text" name="numIdentificacion" placeholder="Número de Identificación">
+    <h4>Digite su nueva contraseña:</h4>
+    <input type="text" name="nContrasena" placeholder="*****">
+    <br>
+    <br>
+    <button>Restablecer Contraseña</button>
+
+
+    <footer><p>Realizado por: Grupo Desarrollo DonkeyRoads Ingeniería de Software 12A - Uniempresarial.</p></footer>
+</body>
+</html>
