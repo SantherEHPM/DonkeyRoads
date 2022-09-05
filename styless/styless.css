@@ -7,13 +7,17 @@ cosas centrados: (que contenga)center
 cosas  a la derecha: (que contenga)right
 cosas con borde grueso: (que contenga) bordg
 cosas con borde ligero: (que contenga) bordl
-cosas con el color principal de relleno:(que contenga) -p
 links: lin
 check boxs: ibox
 
 */
-*{
-    margin: 2px;
+:root{
+    --main-color: rgb(219, 163, 9);/*Color principar se usa var(--main-color)*/
+    --s-color: rgb(255, 255, 255);/*Color de contraste*/
+}
+
+*{/*Inicializacion de elementos*/
+    margin: 0;
     padding: 0;
 }
 /**Menú*/
@@ -21,7 +25,11 @@ check boxs: ibox
     display: flex;
     align-items: center;
     justify-content: flex-end;
+<<<<<<< HEAD
     background-color: blue;
+=======
+    background-color:var(--main-color);
+>>>>>>> 180c010f717e4a2f28ef8f59ef0d9b2f9353a0d6
     color: black;
 }
 .main-menu img{
@@ -56,69 +64,185 @@ footer p{
 }
 
 
-button[class$="servicio"]{
-    padding: 1%;
-    height: auto;
-    width: 20%;
-    margin: 10px;
-}
-
-div[class="serviciohead"]{
-    height: 2in;
-}
-
-div[class$="servicio"]{
-    width: 60%;
-    height: auto;
-    padding: 2%;
-}
-
-main{
-    margin: 10px;
-    justify-content: center;
-}
-
 .ibox{
     margin: 10px;
 }
 
-div{
-    width: inherit;
-    height: inherit;
-}
 
 [class*="line"]{
     /*configurar elemetos como tipo linea*/
-    display: inline;
+    display: inline-block;
 
 }
 
-header{
-    height: 1in;
-    align-items: center;
-    padding: 1%;
+[class^="header"]{
+    height: 2cm ;
+    padding: 5px;
 }
 
-header>div{
-    display: inline;
-    width: inherit;
-    height: inherit;
+div[class*="serv"]>*{
+    margin: 5px;
+}
+
+
+header>h1{
+    position: relative;
+    color: var(--s-color);
+    bottom: 30%;
+    left: 35%;
+    font-size: 50px;
 }
 
 [class*="-p"]{
-    border: none;
-    background: crimson;
+    border: 2px var(--main-color) solid;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: var(--s-color);
 }
 
 [class*="borderg"]{
-    border: 3px crimson solid;
-}
-[class*="center"]{ 
-    justify-content: center;
+    border-radius: 15px;
+    border: 3px var(--main-color) solid;
+    background-color: var(--s-color);
 }
 
-.icon{
+[class*="borderl"]{
+    border-radius: 5px;
+    border: 2px var(--main-color) solid;
+    background-color: var(--s-color);
+}
+
+[class*="center"]{ 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+[class*="left"]{ 
+    justify-content: left;
+    text-align: left;
+}
+
+[class*="iconh"]{/*Icono por altura*/
     height: inherit;
     width: auto;
 }
 
+[class*="iconw"]{/*Icono por ancho*/
+    width: inherit;
+}
+
+div[class^="serv"]{
+    width: fit-content;
+    height: min-content;
+    margin: 40px auto; 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div[class^="serv"]>div{
+    height: 100%;
+}
+
+[class^="bttn"]{
+    margin: 2px;
+    padding: 2px;
+    font-size: 16px;
+}
+
+[class*="text"]{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div[class*="centromsj"]{
+    padding: 10px;
+    margin: 20px;
+    height: fit-content;
+    text-align: left;
+}
+
+hr{
+    visibility: hidden;
+    margin: 20px;
+}
+
+div[class*="notiftext"]{
+    text-align: left;
+    position: relative;
+    bottom: 15px;
+    margin: 15px;
+    width: 70%;
+}
+
+img[class*="centromsj"]{
+    position: relative;
+    height: 100px;
+}
+
+nav{
+    margin: 20px;
+}
+
+nav>a{
+    padding: 10px;
+    width: 400px;
+    font-size: 50px;
+}
+
+nav>div{
+    margin-right: 50px;
+    margin-left: 50pxpx;
+}
+
+main[class="llamando"]{
+    height: 800px;
+}
+
+div[class="llamada"]{
+    position: relative;
+    top:15%;
+}
+
+div[class*="mainOptions"]{
+    position: relative;
+    top: 70px;
+}
+/*
+#silence{
+    position: relative;
+    left: 5;
+}
+#alatavoz{
+    position: relative;
+    left: 50%;
+}
+
+#pause{
+    position: relative;
+    left: 75%;
+}*/
+
+div[class*="space"]{
+    width: 20%;
+}
+
+main[class="disponible"]{
+    height: 85vh;
+}
+main[class="disponible"]>div[id="menu"]{
+    padding: 10px;
+    position: relative;
+    height: auto;
+    width: 28vw ;
+    bottom: 100%;
+    left: 70%;
+}
+
+main[class="disponible"] div[class*="-menu"]{
+    padding: 5px;
+    width: 97%;
+    margin-bottom: 5px;
+
+}
