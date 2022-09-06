@@ -202,20 +202,6 @@ div[class*="mainOptions"]{
     position: relative;
     top: 70px;
 }
-/*
-#silence{
-    position: relative;
-    left: 5;
-}
-#alatavoz{
-    position: relative;
-    left: 50%;
-}
-
-#pause{
-    position: relative;
-    left: 75%;
-}*/
 
 div[class*="space"]{
     width: 20%;
@@ -238,4 +224,23 @@ main[class="disponible"] div[class*="-menu"]{
     width: 97%;
     margin-bottom: 5px;
 
+}
+[class*="-detal"]{
+    width: 20vw;
+    height: 40vh;
+}
+[class*="-ldetal"]{
+    width: 30vw;
+    height: 40vh;
+}
+#userD{
+    margin: 5px;
+    position: relative;
+    bottom: 15px;
+}
+#submitDet{
+    padding: 10px;
+    margin: 40px;
+    font-size: 40px;
+    height: auto;
 }
