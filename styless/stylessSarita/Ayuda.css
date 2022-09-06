@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 .tittle-ayuda{
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 20px;
-    margin-bottom: 20px;
+    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(34, 33, 33);
 }
 .container /*.row1*/{
     width: 90%;
