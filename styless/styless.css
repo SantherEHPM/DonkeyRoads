@@ -12,7 +12,7 @@ check boxs: ibox
 
 */
 :root{
-    --main-color: rgb(219, 163, 9);/*Color principar se usa var(--main-color)*/
+    --main-color: #FF8624;/*Color principal se usa var(--main-color)*/
     --s-color: rgb(255, 255, 255);/*Color de contraste*/
 }
 /**Emanuel*/
@@ -389,6 +389,7 @@ main[class="disponible"] div[class*="-menu"]{
     padding: 5px;
     width: 97%;
     margin-bottom: 5px;
+}
 [class*="center"]{ 
     align-items: center;
     justify-content: center;

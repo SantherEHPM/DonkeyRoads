@@ -1,0 +1,31 @@
+h1{
+    display: flex;
+    padding: 20px;
+    color: aliceblue;
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      width: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(80, 80, 80);
+}
+/*.map{
+    padding-left: 1%;
+    margin: -3%;
+    width: -90vh;
+}*/
+
+.map{
+    margin: 0;
+    width: 800%;
+    height: 900%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    
+}
+.container{
+    
+}
