@@ -54,7 +54,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: blue;
     background-color:var(--main-color);
     color: black;
 }
@@ -74,7 +73,7 @@ footer{
     color: black;
 }
 footer{
-    background-color: blue;
+    background-color: black;
     color: white;
     height: 75px;
     text-align: center;
@@ -143,6 +142,7 @@ footer p{
 }
 .end3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 
@@ -155,10 +155,10 @@ footer p{
      width: 15%;
  }
  .opt-menu a:hover{
-     background-color: white;
-     color: black;
-     border: 5px white solid;
+     background-color: rgb(255, 255, 255, .5);
+     color: rgb(255, 255, 255);
      border-radius: 30px;
+     box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.486)
  }
  .fa-user .fa-solid{
     font-size: 30px; 

@@ -78,12 +78,12 @@ check boxs: ibox
     border-radius: 10px;
     text-align: center;
     display: block;
-    background-color: rgb(8, 146, 192);
+    background-color: #FF8624;
     color: rgb(255, 255, 255);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
     margin-top: 100px;
     float: left;
-    margin-left: -80px;
+    margin-left: 80px;
     height: 60px; 
     width: 100px;
 }
@@ -93,12 +93,12 @@ check boxs: ibox
     border-radius: 10px;
     text-align: center;
     display: block;
-    background-color: rgb(8, 146, 192);
+    background-color:#FF8624;
     color: rgb(255, 255, 255);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
     float: right;
-    margin-top: 100px;
-    margin-right: 820px;
+    margin-top: 80px;
+    margin-right: 650px;
     height: 60px; 
     width: 100px;
     
@@ -110,12 +110,12 @@ check boxs: ibox
     border-radius: 10px;
     text-align: center;
     display: block;
-    background-color: rgb(8, 146, 192);
+    background-color:#FF8624;
     color: rgb(255, 255, 255);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
     float:right;
-    margin-top: -60px;
-    margin-right: 440px;
+    margin-top: 100px;
+    margin-right: 650px;
     height: 60px; 
     width: 100px;
     
@@ -127,12 +127,12 @@ check boxs: ibox
     border-radius: 10px;
     text-align: center;
     display: block;
-    background-color: rgb(8, 146, 192);
+    background-color: #FF8624;
     color: rgb(255, 255, 255);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
     float: right;
-    margin-right: -110px;
-    margin-top: -227px;
+    margin-right:  250px;
+    margin-top: 100px;
     height: 60px; 
     width: 100px;
 }
@@ -143,62 +143,71 @@ check boxs: ibox
     border-radius: 10px;
     text-align: center;
     display: block;
-    background-color:rgb(8, 146, 192);
+    background-color:#FF8624;
     color: rgb(255, 255, 255);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
     float: left;
     margin-top: 90px;
-    margin-left: 630px;
+    margin-left: 760px;
     height: 60px; 
     width: 100px;
 }
 .bttn6{
     margin-top: 20px;
-    margin-left: 630px;
+    margin-left: 770px;
     height: 60px; 
     width: 100px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(255, 255, 255);
-    background:rgb(8, 146, 192);
+    background:#FF8624;
     border-radius: 20px;
 }
 .btnn7{
         float: left;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin-top: 70px;
+        font-size: 20px;
+        margin-top: 80px;
         margin-left: 430px;
         padding: 20px;
-        background:rgb(8, 146, 192);
+        background:#FF8624;
         border-radius: 20px;
     }
 .btnn8{
         float: right;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;       
         margin-top: 60px;
         margin-right: 430px;
         padding: 20px;
-        background: rgb(8, 146, 192);
+        background:#FF8624;
         border-radius: 20px;
         
     }    
 
 .icampo{
     margin-top: 70px;
-    margin-left: 540px;
+    margin-left: 680px;
     border: 3px solid black;
     height: 40px; 
     width: 300px;
 }
 .icampo2{
     margin-top: 0px;
-    margin-left: 540px;
+    margin-left: 680px;
     border: 3px solid black;
     height: 40px; 
     width: 300px;
 }
 .icampo3{
     margin-top: 0px;
-    margin-left: 540px;
+    margin-left: 680px;
+    border: 3px solid black;
+    height: 40px; 
+    width: 300px;
+}
+.icampo5{
+    margin-top: 100px;
+    margin-left: 390px;
     border: 3px solid black;
     height: 40px; 
     width: 300px;
