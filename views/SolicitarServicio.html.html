@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styless/styless.css">
+    <link rel="icon" href="../assets/img/icon.png">
+    <title>DonkeyRoads</title>
+</head>
+<body>
+    <header class="-pborderg">
+        <nav class="main-menu">
+            <a href="../index.html"> <img src="../assets/img/DonkeyRoads.png" width="180"  height="80"></a>
+             
+             <ul class="main-menu opt-menu">
+                 <li><a href="../index.html" target="_blank"><img src="../assets/img/home.png" alt="inicio" width="40" height="40"></a></li>
+                 <li><a href="../views/login.html" target="_blank"><img src="../assets/img/perfil.png" width="38" height="38" alt=""></a></li>
+                 <li><a href="../views/mapa.html" target="_blank"><img src="../assets/img/search.png" width="40" height="40" alt="buscar"></a></li>
+             </ul>
+         </nav>     
+    </header> 
+    <h1> Solicitar Servicio</h1>
+    <br><br>
+    <form>
+        <fieldset><legend>Informacion necesaria</legend>
+            <label form="icampo"></label>
+            <input type="text"
+            placeholder="Dirección de salida"
+            title="Introducir la dirección donde inicia el servicio"
+            autofocus="true"
+            autocomplete="off"
+            required>
+            <br><br>
+            <input type="text"
+            placeholder="Dirección de llegada"
+            title="Introducir la dirección donde termina el servicio"
+            autofocus="true"
+            autocomplete="off"
+            requires>
+            <br><br>
+            <label for="dateInsc">Fecha del servicio</label>
+            <input type="date" id="dateInsc">
+            <label for="file" name="file" id="documentFile"></label>
+            &nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="startTime">Hora</label>
+            <input type="time" id="startTime">
+        </fieldset> <br>
+        <fieldset><legend>Parámetros específicos</legend>
+            <label form="icampo"></label>
+            <input type="text"
+            placeholder="Tamaño de carga"
+            title="Introducir el tamaño de la carga"
+            autofocus="true"
+            autocomplete="off"
+            required>
+            <br><br>
+            <input type="text"
+            placeholder="Peso de carga"
+            title="Introducir el peso de la carga en kg"
+            autofocus="true"
+            autocomplete="off"
+            requires>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="typeDocument" name="typeDocument">
+                <option value="nada" selected="selected">Tipo de carga</option>
+                <option value="cc">Carga pequeña</option>
+                <option value="ti">Carga mediana</option>
+                <option value="ce">Carga grande</option>
+                
+            </select>
+        </fieldset>
+        <br>
+        <label for="acepta">Ayudante de carga</label>
+        <input type="checkbox" id="terminos">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="bttn">Solicitar Servicio</button>
+    </form>
+    <br><br><br>
+    <footer><p>Derechos reservados | Realizado por: Grupo Desarrollo DonkeyRoads Ingeniería de Software 12A - Uniempresarial.</p></footer>
+</body>
+</html>

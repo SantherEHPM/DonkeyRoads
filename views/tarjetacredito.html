@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styless/stylessNicolas/styless.css">
+    <title>Medios de pago</title>
+</head>
+<body>
+    <header><h1 class="title">Medios de pago</h1></header>
+    <section>
+        <h2 class="title">configuración  Tarjeta Credito</h2>
+        <form id="tarjetacredito">
+            <label class="legend" for="tarjetadebito"></label>
+            <input class="icampo"
+                type="text" 
+                id="ndebito" 
+                name="tarjetadebito" 
+                placeholder="Introduce su numero de tarjeta debito"
+                minlength="3" 
+                maxlength="50"
+                tabindex="0"
+                autofocus="true"
+                autocomplete="off"
+                required>
+                <br><br>
+            <label class="legend2" for="fechadeexpedicion"></label>
+            <input class="icampo2"
+                type="text" 
+                id="fechaex" 
+                placeholder="Introduce su fecha de expedicion"
+                name="fechadeexpedicion" 
+                minlength="3" 
+                maxlength="50"
+                tabindex="0"
+                autofocus="true"
+                autocomplete="off"
+                required>
+                <br><br>
+            <label class="legend3" for="codigoseguridad"></label>
+            <input class="icampo3"
+                    type="text" 
+                    id="cvc" 
+                    placeholder="CVC"
+                    name="cvv" 
+                    minlength="3" 
+                    maxlength="50"
+                    tabindex="0"
+                    autofocus="true"
+                    autocomplete="off"
+                    required>
+                    <br><br>
+            <button class="bttn6 " id="guardar">guardar</button>
+            </form>
+    </section> 
+            
+    <script src="/scripts/tarjetacredito.js"></script>
+</body>
+</html>
