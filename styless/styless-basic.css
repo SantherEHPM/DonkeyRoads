@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 :root{
     --font-title:'Combo', cursive;/*font-weidth:400*/
     --font-subtitle: 'Oswald', sans-serif;/*font-weidth:300-500*/
@@ -13,6 +8,15 @@
     --second2-color:#EBA707;
     --second3-color:#FFDD05;
     --contrast-color: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-light);
+    box-sizing: border-box;
+}
+h1, h2{
+    font-family: var(--font-subtitle);
 }
 .header{
     display: flex;
@@ -32,18 +36,16 @@
     min-width: 60px;
     height: fit-content;
     filter: invert(100%);
-    align-self: baseline;
 }
 .header a{
-    display: flex;
-    background-color: #7a0600;
-    height: 20px;
+    position: relative;
+    bottom:20%;
+    min-height: 10px;
+    height: 1vh;
 }
-.header-s-icon:hover{
-    background-color: rgb(255, 255, 255, .5);
-    color: rgb(255, 255, 255);
-    border-radius: 30px;
-    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.486)
+.header a:hover{
+    border-radius: 25px;
+    box-shadow: 0 4vw  15px 5px #ffffffa2;
 }
 .header-div{
     width: 600px;
@@ -81,8 +83,13 @@ main{
     height: 70vh;
     vertical-align: middle;   
 }
+.conjunter{
+    border-radius: 15px;
+    padding: 20px;
+    width: fit-content;
+    border:3px solid #7a0600;
+}
 .button-main{
-    font-family: var(--font-light);
     font-size: large;
     padding: 1ex;
     width: auto;
@@ -93,17 +100,56 @@ main{
     border: 5px  solid  #7a0600;
     border-style: none solid solid none;
 }
-.button-main:active{
+.button-other{
+    font-size: large;
+    padding: 1ex;
+    width: auto;
+    line-height: normal;
+    height: 6ex;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 2px  solid var(--dark-color);
+    color: var(--dark-color);
+}
+.button-main:active,.button-other:active{
+    border-width: 3px;
+    color: var(--second1-color);
+    border-style: solid;
     background-color: var(--second2-color);
     border-color: var(--second1-color);
 }
-.input[type="text"]:invalid{
-    border: 5px red solid
+.button-other:hover{
+    background-color: #c0c0c0;
+}
+.input-keyboard{
+    outline: none;
+    font-size: large;
+    padding: 1ex;
+    border-radius: 5px;
+    height: 6ex;
+    width: auto;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.input-keyboard:hover{
+    border: 1px solid var(--second2-color);
+    box-shadow: 0 0 5px 5px var(--second2-color);
+}
+.input-invalid{
+     
+    font-size: large;
+    padding: 1ex;
+    border-radius: 5px;
+    height: 6ex;
+    width: auto;
+    overflow: hidden;
+    border-style: hidden;
+    box-shadow: 0px 0px 5px 5px red;
 }
 .footer{
     padding: 1%;
     text-align: center;
-    /*font-family: var(--font-light);*/
+    /* */
     height: 10vh;
     color: var(--contrast-color);
     background-color: var(--dark-color);
@@ -117,7 +163,7 @@ main{
     font-size: 1.5vh;
     text-decoration: dotted;
     font-weight: 300;
-    font-family: var(--font-light);
+     
 }
 .mini-icon{
     height:3vh;
@@ -131,6 +177,10 @@ main{
     .header-icon{ 
         height: 5vh;
     }
+    .header a:hover{
+        border-radius: 25px;
+        box-shadow: 0 4vw  15px 5px #ffffffa2;
+    }
     .header-title{
         font-size: 4vh;
     }
@@ -140,8 +190,11 @@ main{
         width:350px;
     }
     .header-s-icon{
-        width: 8vw;
+        width: 10vw;
         min-width: 40px;
+    }
+    .header a:hover{
+        box-shadow: 0 10vw  15px 5px #ffffffa2;
     }
     .header-title{
         font-size: 4vh;
