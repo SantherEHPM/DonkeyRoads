@@ -1,17 +1,176 @@
-h1{
+
+:root{
+    --font-title:'Combo', cursive;/*font-weidth:400*/
+    --font-subtitle: 'Oswald', sans-serif;/*font-weidth:300-500*/
+    --font-light: 'Prompt', sans-serif;/*font-weidth:300-400 italic*/
+    --main-color:#FA8100;
+    --dark-color:#7a0600;
+    --second1-color:#E3480B;
+    --second2-color:#EBA707;
+    --second3-color:#FFDD05;
+    --contrast-color: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-light);
+    box-sizing: border-box;
+}
+h1, h2{
+    font-family: var(--font-subtitle);
+}
+.header{
     display: flex;
-    padding: 20px;
-    color: aliceblue;
-      flex-wrap: wrap;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      width: 100%;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: rgb(80, 80, 80);
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 20vh; 
+    padding: 5vh 3vw 5vh 3vw;
+    color: var(--contrast-color);
+    background:  linear-gradient(0,var(--main-color) 40%,var(--second1-color));
+}
+.header-s-icon{
+    margin: auto 0;
+    width: 5vw;
+    min-width: 60px;
+    height: fit-content;
+    filter: invert(100%);
+}
+.header>a{
+    position: relative;
+    bottom:20%;
+    min-height: 10px;
+    height: 1vh;
+}
+a{
+   height: fit-content; 
+}
+.header>a:hover{
+    border-radius: 25px;
+    box-shadow: 0 4vw  15px 5px #ffffffa2;
+}
+.header-div{
+    width: 600px;
+    text-align: center;
+    height: 100%;
+    display: inline-block;
+}
+.header-div *{
+    vertical-align: top;
+    display: inline-block;
+    margin: auto 10px;
+}
+.header-title{
+    color: var(--contrast-color);
+    font-size: 6vh;
+    font-family: var(--font-title);
+    height: 6vh;
+}
+.header-subtitle{
+    margin: 1vh auto;
+    display: block;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: var(--font-subtitle);
+    font-size: 3vh;
+}
+.header-icon{ 
+    height: 7vh;
 }
 .map{
     margin: 1px auto;
     width: 50px;
     height: 100pc;
+}
+.footer{
+    padding: 1%;
+    text-align: center;
+    /* */
+    height: 10vh;
+    color: var(--contrast-color);
+    background-color: var(--dark-color);
+    text-decoration: none;
+}
+.footer *{
+    color: var(--contrast-color);
+}
+.footer-text{
+    margin: 0.5%;
+    font-size: 1.5vh;
+    text-decoration: dotted;
+    font-weight: 300;
+     
+}
+.mini-icon{
+    height:3vh;
+    min-height: 20px;
+}
+
+@media all and (max-width:760px) {  
+    .header-div{
+        width:400px;
+    }
+    .header-icon{ 
+        height: 5vh;
+    }
+    .header a:hover{
+        border-radius: 25px;
+        box-shadow: 0 4vw  15px 5px #ffffffa2;
+    }
+    .header-title{
+        font-size: 4vh;
+    }
+}
+@media all and (max-width:580px) { 
+    .header-div{
+        width:350px;
+    }
+    .header-s-icon{
+        width: 10vw;
+        min-width: 40px;
+    }
+    .header a:hover{
+        box-shadow: 0 10vw  15px 5px #ffffffa2;
+    }
+    .header-title{
+        font-size: 4vh;
+    }
+    .header-icon,.header-title{ 
+        height: 5vh;
+    }
+}
+@media all and (max-width:480px) { 
+    .header-title{
+        font-size: 3vh;
+    }
+    .header-div{
+        width:200px;
+    }
+    .header-icon{
+        position: absolute;
+        visibility: hidden;
+    }
+    .footer-text{
+        font-size: 2vh;
+    }
+}
+
+@media all and (max-height:1000px){
+    .footer-text{
+       font-size: 14px;
+    }
+}
+
+@media all and (max-height:700px){
+    .header-title{
+        font-size: 20px;
+    }
+    .footer{
+        height: 15vh;
+    }
+    .header-subtitle{
+        font-size: 16px;
+    }
 }
