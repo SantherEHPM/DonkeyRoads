@@ -5,8 +5,85 @@
     border: none;
     outline: none;
 }
-h1{
-  color: aliceblue;
+:root{
+  --font-title:'Combo', cursive;/*font-weidth:400*/
+  --font-subtitle: 'Oswald', sans-serif;/*font-weidth:300-500*/
+  --font-light: 'Prompt', sans-serif;/*font-weidth:300-400 italic*/
+  --main-color:#FA8100;
+  --dark-color:#7a0600;
+  --second1-color:#E3480B;
+  --second2-color:#EBA707;
+  --second3-color:#FFDD05;
+  --contrast-color: #ffffff;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-light);
+  box-sizing: border-box;
+}
+h1, h2{
+  font-family: var(--font-subtitle);
+}
+.header{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 99vw;
+  height: 20vh; 
+  padding: 5vh 3vw 5vh 3vw;
+  color: var(--contrast-color);
+  background:  linear-gradient(0,var(--main-color) 40%,var(--second1-color));
+}
+.header-s-icon{
+  margin: auto 0;
+  width: 5vw;
+  min-width: 60px;
+  height: fit-content;
+  filter: invert(100%);
+}
+.header>a{
+  position: relative;
+  bottom:20%;
+  min-height: 10px;
+  height: 1vh;
+}
+a{
+ height: fit-content; 
+}
+.header>a:hover{
+  border-radius: 25px;
+  box-shadow: 0 4vw  15px 5px #ffffffa2;
+}
+.header-div{
+  width: 600px;
+  text-align: center;
+  height: 100%;
+  display: inline-block;
+}
+.header-div *{
+  vertical-align: top;
+  display: inline-block;
+  margin: auto 10px;
+}
+.header-title{
+  color: var(--contrast-color);
+  font-size: 6vh;
+  font-family: var(--font-title);
+  height: 6vh;
+}
+.header-subtitle{
+  margin: 1vh auto;
+  display: block;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: var(--font-subtitle);
+  font-size: 3vh;
+}
+.header-icon{ 
+  height: 7vh;
 }
 .titulo{
   display: flex;
@@ -25,7 +102,7 @@ h1{
 
   display: flex;
   min-height: 100vh;
-  background-color: rgb(201, 210, 211);
+  background-color: rgb(247, 246, 216);
 }
 .chat{
   width: 100%;
@@ -47,23 +124,23 @@ h1{
   width: 30%;
   margin: 5px 0 5px auto;
   position: relative;
-  background-color: rgb(84, 133, 196);
+  background-color: #f0ab09c7;
   padding: 20px 15px;
   border-radius: 15px 15px 0 10px;
 }
 .input{
   display: flex;
   align-items: center;
-  width: 100%;
-  min-height: 20vh;
-  background-color: rgb(101, 160, 216);
-  padding: 15px;
-  overflow: hidden;
+  width: 95%;
+  min-height: 2vh;
+  background-color: #b37d08;
+  padding: 10px;
   position: absolute;
   bottom: 0;
+  border-radius: 15PX;
 }
 .input input{
-  padding: 30px;
+  padding: 20px;
   width: calc(90% - 30px);
   height: 100%;
   border-radius: 20px 20px 20px 20px;
@@ -73,12 +150,102 @@ h1{
   font-size: 50px;
   width: 80px;
   height: 80px;
-  background-color: rgb(60, 107, 151);
+  background-color: #db7405dc;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.712);
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  margin-left: 20px;
+  margin-left: 30px;
   cursor: pointer;
   transition: 4s;
+}
+.footer{
+  padding: 1%;
+  text-align: center;
+  /* */
+  height: 10vh;
+  color: var(--contrast-color);
+  background-color: var(--dark-color);
+  text-decoration: none;
+}
+.footer *{
+  color: var(--contrast-color);
+}
+.footer-text{
+  margin: 0.5%;
+  font-size: 1.5vh;
+  text-decoration: dotted;
+  font-weight: 300;
+   
+}
+.mini-icon{
+  height:3vh;
+  min-height: 20px;
+}
+
+@media all and (max-width:760px) {  
+  .header-div{
+      width:400px;
+  }
+  .header-icon{ 
+      height: 5vh;
+  }
+  .header a:hover{
+      border-radius: 25px;
+      box-shadow: 0 4vw  15px 5px #ffffffa2;
+  }
+  .header-title{
+      font-size: 4vh;
+  }
+}
+@media all and (max-width:580px) { 
+  .header-div{
+      width:350px;
+  }
+  .header-s-icon{
+      width: 10vw;
+      min-width: 40px;
+  }
+  .header a:hover{
+      box-shadow: 0 10vw  15px 5px #ffffffa2;
+  }
+  .header-title{
+      font-size: 4vh;
+  }
+  .header-icon,.header-title{ 
+      height: 5vh;
+  }
+}
+@media all and (max-width:480px) { 
+  .header-title{
+      font-size: 3vh;
+  }
+  .header-div{
+      width:200px;
+  }
+  .header-icon{
+      position: absolute;
+      visibility: hidden;
+  }
+  .footer-text{
+      font-size: 2vh;
+  }
+}
+
+@media all and (max-height:1000px){
+  .footer-text{
+     font-size: 14px;
+  }
+}
+
+@media all and (max-height:700px){
+  .header-title{
+      font-size: 20px;
+  }
+  .footer{
+      height: 15vh;
+  }
+  .header-subtitle{
+      font-size: 16px;
+  }
 }
