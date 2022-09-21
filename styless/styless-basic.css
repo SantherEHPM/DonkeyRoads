@@ -33,8 +33,9 @@ h1, h2{
 .header-s-icon{
     margin: auto 0;
     width: 5vw;
-    min-width: 60px;
     height: fit-content;
+    min-height: 40px;
+    min-width: 40px;
     filter: invert(100%);
 }
 .header>a{
@@ -44,14 +45,15 @@ h1, h2{
     height: 1vh;
 }
 a{
-   height: fit-content; 
+    text-decoration: none;
+    height: fit-content; 
 }
 .header>a:hover{
     border-radius: 25px;
     box-shadow: 0 4vw  15px 5px #ffffffa2;
 }
 .header-div{
-    width: 600px;
+    width: 50vw;
     text-align: center;
     height: 100%;
     display: inline-block;
@@ -78,18 +80,9 @@ a{
 .header-icon{ 
     height: 7vh;
 }
-main{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-    vertical-align: middle;   
-}
 .conjunter{
     border-radius: 15px;
-    padding: 20px;
+    padding: 1%;
     width: fit-content;
     border:3px solid #7a0600;
 }
@@ -177,13 +170,15 @@ main{
     height:3vh;
     min-height: 20px;
 }
+@media (max-width:1400) {
+    .header-div{
+        width: 90vw;
+    }
+}
 
 @media all and (max-width:760px) {  
     .header-div{
         width:400px;
-    }
-    .header-icon{ 
-        height: 5vh;
     }
     .header a:hover{
         border-radius: 25px;
@@ -192,6 +187,10 @@ main{
     .header-title{
         font-size: 4vh;
     }
+    .header-icon{
+        position: absolute;
+        visibility: hidden;
+    }
 }
 @media all and (max-width:580px) { 
     .header-div{
@@ -199,28 +198,23 @@ main{
     }
     .header-s-icon{
         width: 10vw;
-        min-width: 40px;
     }
     .header a:hover{
         box-shadow: 0 10vw  15px 5px #ffffffa2;
     }
     .header-title{
-        font-size: 4vh;
+        font-size: 5vh;
     }
-    .header-icon,.header-title{ 
-        height: 5vh;
+    .header-title{ 
+        height: 6vh;
     }
 }
 @media all and (max-width:480px) { 
     .header-title{
-        font-size: 3vh;
+        font-size: 4vh;
     }
     .header-div{
         width:200px;
-    }
-    .header-icon{
-        position: absolute;
-        visibility: hidden;
     }
     .footer-text{
         font-size: 2vh;
@@ -234,13 +228,22 @@ main{
 }
 
 @media all and (max-height:700px){
+    .header-icon,.header-title{ 
+        height: 8vh;
+        margin: 0 2px;
+    }
     .header-title{
-        font-size: 20px;
+        font-size: 26px;
     }
     .footer{
         height: 15vh;
     }
     .header-subtitle{
+        margin-top: 2px;
         font-size: 16px;
+    }
+    .header-s-icon{
+       height: 5vw;
+       width: auto;
     }
 }

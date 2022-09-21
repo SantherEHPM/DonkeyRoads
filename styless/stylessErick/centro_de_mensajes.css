@@ -1,0 +1,109 @@
+
+@import "../styless-basic.css";
+main{
+    width: 100vw;
+    height: 70vh;
+}
+.taps{
+    width: 100%;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 5px 5vw 0 5vw;
+    border-bottom: 5px var(--main-color) solid;
+    overflow: hidden;
+}
+.bttn-cm{
+    height: auto;
+    padding: 0.5ex;
+    font-size: inherit;
+    font-family: var(--font-subtitle);
+    display: inline-block;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    width: 45vw;
+    border-bottom: 0px chocolate none;
+}
+.center{
+    padding: 10px;
+    display: block;
+    width: 100vw;
+    height: 60vh;
+    overflow: scroll;
+}
+.conjunter{
+    position: relative;
+    display: block;
+    border-width: 2px;
+    width: 75vw;
+    height: 12vh;
+    overflow: hidden;
+    min-height: 60px;
+    color: black;
+    margin: 5px auto;
+}
+.sheader{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(180deg,transparent 80%, white);
+}
+.conjunter *{
+    vertical-align: top;
+}
+.conjunter>img{
+    display: inline-block;
+    padding-right: 10px;
+    height:100%;
+    min-height: 30px;
+    min-width: 30px;
+    width: auto;
+}
+.notiftext{
+    display: inline-block;
+    width: 80%;
+}
+.notiftext h2,p{
+    font-size:2vh;
+}
+
+@media (max-width:920px) {      
+    .notiftext{
+        width: 70%;
+    }
+}
+@media (max-width:700px) {      
+    .conjunter{
+        width: 100vw;
+    } 
+    .notiftext{
+        width: 80%;
+    }
+    .notiftext h2{
+        font-size: 16px;
+    }
+    .notiftext p{
+        font-size: 14px;
+    }
+}
+@media (max-width:520px) {     
+    .notiftext{
+        width: 60%;
+    }
+}
+@media (max-height:900px){
+    .taps{
+        font-size: 18px;
+    }
+}
+@media (max-height: 1000px) {
+    .notiftext h2{
+        font-size: 16px;
+    }
+    .notiftext p{
+        font-size: 14px;
+    }
+}
