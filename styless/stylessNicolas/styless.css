@@ -18,7 +18,19 @@ links: lin
 check boxs: ibox
 
 */
+@import "../styless-basic.css";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-light);
+    box-sizing: border-box;
+}
+ h2{
+    margin-top:-10vw;
+    font-family: var(--font-subtitle);
+}
 .title{
+    
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 
@@ -33,15 +45,21 @@ check boxs: ibox
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     margin-top: 0px;
 }
+.title5{
+    top: 70px;
+    left: 25%;
+    position: relative;
+
+}
 
 
 .imgcomun{
-    float: left;
-    margin-left: 80px;
-    top: 40px;
-    left: 500px;
-    height: 100px; 
-    width: 100px;
+    margin-top: 10px;
+    position: relative;
+    height: 10vw;
+    width: 10vw ;
+    top: 160px;
+    left: 45%;
 }
 .imgcomun2{
     float: left;
@@ -49,168 +67,124 @@ check boxs: ibox
     height: 40px; 
     width: 40px;
 }
-.textn{
-    top: 40px;
-    float: left;
-    margin-left: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-}
 
+.textn{
+    text-align: center;
+}
 .textn1{
-    float: left;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -180px;
+    position: relative;
+    height: 10vw;
+    width: 10vw ;
+    top: 110px;
+    left: -10%;
     font-size: 20px;
-    margin-left: 170px;
     
 }
 .textn2{
-    float:right;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -180px;
+    position: relative;
+    height: 10vw;
+    width: 10vw ;
+    top: 140px;
+    left: 105%;
     font-size: 20px;
-    margin-right: 170px;
-}
-
-
-.bttn1{
-    border: 2px solid black;
-    text-decoration: none;
-    border-radius: 10px;
-    text-align: center;
-    display: block;
-    background-color: #FF8624;
-    color: rgb(255, 255, 255);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
-    margin-top: 100px;
-    float: left;
-    margin-left: 80px;
-    height: 60px; 
-    width: 100px;
-}
-.bttn2{
-    border: 2px solid black;
-    text-decoration: none;
-    border-radius: 10px;
-    text-align: center;
-    display: block;
-    background-color:#FF8624;
-    color: rgb(255, 255, 255);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
-    float: right;
-    margin-top: 80px;
-    margin-right: 650px;
-    height: 60px; 
-    width: 100px;
     
 }
 
-.bttn3{
-    border: 2px solid black;
+.button-main{
+    display: inline-block;
     text-decoration: none;
-    border-radius: 10px;
-    text-align: center;
-    display: block;
-    background-color:#FF8624;
+    text-align: center;;
     color: rgb(255, 255, 255);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
-    float:right;
-    margin-top: 100px;
-    margin-right: 650px;
-    height: 60px; 
-    width: 100px;
-    
+    height: 6ex !important;
+    width: 20vw !important;
+    min-width: 200px;
+
+}
+.button-main:visited{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
-.bttn4{
-    border: 2px solid black;
-    text-decoration: none;
-    border-radius: 10px;
-    text-align: center;
-    display: block;
-    background-color: #FF8624;
-    color: rgb(255, 255, 255);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
-    float: right;
-    margin-right:  250px;
-    margin-top: 100px;
-    height: 60px; 
-    width: 100px;
-}
 
-.bttn5{
-    border: 2px solid black;
-    text-decoration: none;
-    border-radius: 10px;
-    text-align: center;
-    display: block;
-    background-color:#FF8624;
-    color: rgb(255, 255, 255);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
-    float: left;
-    margin-top: 90px;
-    margin-left: 760px;
-    height: 60px; 
-    width: 100px;
-}
 .bttn6{
-    margin-top: 20px;
-    margin-left: 770px;
-    height: 60px; 
-    width: 100px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(255, 255, 255);
-    background:#FF8624;
-    border-radius: 20px;
+    margin-top: -700px;
+    position: relative;
+    height: 2vw;
+    width: 40vw ;
+    left: 5%;
+    
+}   
+
+.bttn7{
+    margin-top: 40px;
+    position: relative;
+    height: 2vw;
+    width: 40vw ;
+    left: 5%;    
 }
-.btnn7{
-        float: left;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 20px;
-        margin-top: 80px;
-        margin-left: 430px;
-        padding: 20px;
-        background:#FF8624;
-        border-radius: 20px;
-    }
+
 .btnn8{
         float: right;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 20px;       
         margin-top: 60px;
         margin-right: 430px;
-        padding: 20px;
-        background:#FF8624;
-        border-radius: 20px;
+        
         
     }    
 
 .icampo{
-    margin-top: 70px;
-    margin-left: 680px;
-    border: 3px solid black;
-    height: 40px; 
-    width: 300px;
+    top: 30px;
+    margin-top: 90px;
+    position: relative;
+    height: 3vw;
+    width: 30vw ;
+    left: 15%;
+    border-radius: 10px;
 }
 .icampo2{
-    margin-top: 0px;
-    margin-left: 680px;
-    border: 3px solid black;
-    height: 40px; 
-    width: 300px;
+    top: 25px;
+    margin-top: 20px;
+    position: relative;
+    height: 3vw;
+    width: 30vw ;
+    left: 15%;
+    border-radius: 10px;
 }
 .icampo3{
-    margin-top: 0px;
-    margin-left: 680px;
-    border: 3px solid black;
-    height: 40px; 
-    width: 300px;
+    top: 15px;
+    margin-top: 20px;
+    position: relative;
+    height: 3vw;
+    width: 30vw ;
+    left: 15%;
+    border-radius: 10px;
 }
 .icampo5{
-    margin-top: 100px;
-    margin-left: 390px;
-    border: 3px solid black;
-    height: 40px; 
-    width: 300px;
+    margin-top: 20px;
+    position: relative;
+    height: 3vw;
+    width: 26vw ;
+    left: 17%;
+    border-radius: 10px;
+}
+.icampo6{
+    margin-top: 20px;
+    position: relative;
+    height: 3vw;
+    width: 26vw ;
+    left: 17%;
+    border-radius: 10px;
+}
+.icampo7{
+    margin-top: 20px;
+    position: relative;
+    height: 3vw;
+    width: 26vw ;
+    left: 17%;
+    border-radius: 10px;
 }
 
 input::placeholder{

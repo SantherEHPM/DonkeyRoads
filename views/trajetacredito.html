@@ -5,42 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styless/styless-basic.css">
-    <link rel="stylesheet" href="../styless/stylessErick/centro_de_mensajes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Combo&family=Oswald:wght@300;400;500&family=Prompt:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="icon" href="../assets/img/iconF.png">
+    <link rel="stylesheet" href="../styless/stylessNicolas/styless.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
     <title>DonkeyRoads</title>
 </head>
 <body>
     <header class="header">
         <a href=""><img src="../assets/img/585e4beacb11b227491c3399.png" alt="usuario" class="header-s-icon"></a>
-        <div class="header-div"><!--dsffdf-->
+        <div class="header-div">
             <a href="">
                 <h1 class="header-title">DonkeyRoads</h1>
                 <img src="../assets/img/iconF.png" alt="logo" class="header-icon">
             </a>
-            <h2 class="header-subtitle">Notificaciones y mensajes</h2>
+            <h2 class="header-subtitle">Seccion</h2>
         </div>
         <a href=""><img src="../assets/img/search.png" alt="usuario" class="header-s-icon"></a>
     </header>
-    <main>  
-        <div class="taps">
-            <a href="./centro_de_notificaciones.html"><button class="bttn-cm button-other">Notificaciones</button></a>
-            <a href="./centro_de_mensajes.html"><button class="bttn-cm button-main">Mensajes</button></a>
-        </div>
-        <div class="center" id="notif-list">
-        <a href="" class="conjunter">
-                <img src="../assets/img/585e4beacb11b227491c3399.png" alt="autor-notificacion" class="">
-                <div class="notiftext">
-                    <h2 class="text">Remitente</h2>
-                    <p class="text">Texto de mensaje: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nemo incidunt, deserunt repudiandae esse ducimus dolores, rerum recusandae delectus, quisquam doloribus exercitationem aut dolor. Nobis obcaecati ducimus unde, sint modi similique sunt quasi cum a corporis ipsam eaque molestias magni quis dolores nesciunt? Aut eius repellat tenetur hic. Neque, alias. </p>
-                </div>
-                <div class="sheader"></div>
-        </a>
-        </div>
+    <main> 
+            <article>
+                <h2 class="title5">configuración  Tarjeta Credito</h2>
+                <form id="tarjetacredito">
+                    <label class="legend" for="tarjetadebito"></label>
+                    <input class="icampo"
+                        type="text" 
+                        id="ndebito" 
+                        name="tarjetadebito" 
+                        placeholder="Introduce su numero de tarjeta debito"
+                        minlength="3" 
+                        maxlength="50"
+                        tabindex="0"
+                        autofocus="true"
+                        autocomplete="off"
+                        required>
+                        <br><br>
+                    <label class="legend2" for="fechadeexpedicion"></label>
+                    <input class="icampo2"
+                        type="text" 
+                        id="fechaex" 
+                        placeholder="Introduce su fecha de expedicion"
+                        name="fechadeexpedicion" 
+                        minlength="3" 
+                        maxlength="50"
+                        tabindex="0"
+                        autofocus="true"
+                        autocomplete="off"
+                        required>
+                        <br><br>
+                    <label class="legend3" for="codigoseguridad"></label>
+                    <input class="icampo3"
+                            type="text" 
+                            id="cvc" 
+                            placeholder="CVC"
+                            name="cvv" 
+                            minlength="3" 
+                            maxlength="50"
+                            tabindex="0"
+                            autofocus="true"
+                            autocomplete="off"
+                            required>
+                            <br><br>
+                    <button class="bttn7 button-main" id="guardar">guardar</button>
+                    </form>
+            </article>
     </main>
     <footer class="footer">
         <h4 class="footer-text">Derechos reservados de <a href="https://www.uniempresarial.edu.co/" target="_blank" >Uniempresarial</a></h4>
@@ -50,16 +82,6 @@
             </svg>
         </a>
     </footer>
-    <template id="notificacion">
-        <a href="" class="conjunter">
-            <img src="../assets/img/585e4beacb11b227491c3399.png" alt="autor-notificacion" class="">
-            <div class="notiftext">
-                <h2 class="text">Remitente</h2>
-                <p class="text">Texto de mensaje: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nemo incidunt, deserunt repudiandae esse ducimus dolores, rerum recusandae delectus, quisquam doloribus exercitationem aut dolor. Nobis obcaecati ducimus unde, sint modi similique sunt quasi cum a corporis ipsam eaque molestias magni quis dolores nesciunt? Aut eius repellat tenetur hic. Neque, alias. </p>
-            </div>
-            <div class="sheader"></div>
-    </a>
-    </template>
-    <script src="../scripts/generador_notificaciones.js" type="module"></script>
+    <script src=""></script>
 </body>
 </html>
