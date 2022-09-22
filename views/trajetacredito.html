@@ -29,15 +29,49 @@
     </header>
     <main> 
             <article>
-                    <section><h2 class="textn">Elija un metodo de pago:</h2></section> <br>
-                    <article>
-                        <a href="https://www.efecty.com.co/web/" class="button-main">Efectivo</a><br>
-                        <br><a href="https://transacciones.nequi.com/bdigital/login.jsp" class=" button-main" >Nequi</a><br>
-                        <br><a href="trajetacredito.html" class="button-main" >Tarjeta credito</a><br>
-                        <br><a href="tarjetadebito.html" class="button-main" >Tarjeta Debito</a><br>
-                        <br><a href="https://www.pse.com.co/persona" class="bttn5 button-main" >PSE</a><br>
-                
-                    </article>
+                <h2 class="title5">configuración  Tarjeta Credito</h2>
+                <form id="tarjetacredito">
+                    <label class="legend" for="tarjetadebito"></label>
+                    <input class="icampo"
+                        type="text" 
+                        id="ndebito" 
+                        name="tarjetadebito" 
+                        placeholder="Introduce su numero de tarjeta debito"
+                        minlength="3" 
+                        maxlength="50"
+                        tabindex="0"
+                        autofocus="true"
+                        autocomplete="off"
+                        required>
+                        <br><br>
+                    <label class="legend2" for="fechadeexpedicion"></label>
+                    <input class="icampo2"
+                        type="text" 
+                        id="fechaex" 
+                        placeholder="Introduce su fecha de expedicion"
+                        name="fechadeexpedicion" 
+                        minlength="3" 
+                        maxlength="50"
+                        tabindex="0"
+                        autofocus="true"
+                        autocomplete="off"
+                        required>
+                        <br><br>
+                    <label class="legend3" for="codigoseguridad"></label>
+                    <input class="icampo3"
+                            type="text" 
+                            id="cvc" 
+                            placeholder="CVC"
+                            name="cvv" 
+                            minlength="3" 
+                            maxlength="50"
+                            tabindex="0"
+                            autofocus="true"
+                            autocomplete="off"
+                            required>
+                            <br><br>
+                    <button class="bttn7 button-main" id="guardar">guardar</button>
+                    </form>
             </article>
     </main>
     <footer class="footer">
@@ -48,6 +82,6 @@
             </svg>
         </a>
     </footer>
-    <script src="./scripts/styless-basic.js"></script>
+    <script src=""></script>
 </body>
 </html>

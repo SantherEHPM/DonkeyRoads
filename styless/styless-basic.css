@@ -1,4 +1,4 @@
-:root{
+:root{ /*Variables, procuren hacer el @import "../styless-basic.css en los individuales"*/
     --font-title:'Combo', cursive;/*font-weidth:400*/
     --font-subtitle: 'Oswald', sans-serif;/*font-weidth:300-500*/
     --font-light: 'Prompt', sans-serif;/*font-weidth:300-400 italic*/
@@ -9,15 +9,16 @@
     --second3-color:#FFDD05;
     --contrast-color: #ffffff;
 }
-*{
+*{/*Inicializacion global*/
     margin: 0;
     padding: 0;
     font-family: var(--font-light);
     box-sizing: border-box;
 }
-h1, h2{
+h1, h2{/*Configuracion de fuentes*/
     font-family: var(--font-subtitle);
 }
+/*Encabezado*/
 .header{
     display: flex;
     flex-wrap: nowrap;
@@ -44,7 +45,8 @@ h1, h2{
     height: 1vh;
 }
 a{
-   height: fit-content; 
+    text-decoration: none;
+    height: fit-content;
 }
 .header>a:hover{
     border-radius: 25px;
@@ -78,6 +80,7 @@ a{
 .header-icon{ 
     height: 7vh;
 }
+/*Contenido*/
 main{
     display: flex;
     flex-wrap: nowrap;
@@ -87,12 +90,14 @@ main{
     height: 70vh;
     vertical-align: middle;   
 }
+/*Agrupador*/
 .conjunter{
     border-radius: 15px;
     padding: 20px;
     width: fit-content;
     border:3px solid #7a0600;
 }
+/*Botones*/
 .button-main{
     font-size: large;
     padding: 1ex;
@@ -129,6 +134,7 @@ main{
     cursor: pointer;
     background-color: #c0c0c0;
 }
+/*Entradas de texto*/
 .input-keyboard{
     outline: none;
     font-size: large;
@@ -144,7 +150,6 @@ main{
     box-shadow: 0 0 5px 5px var(--second2-color);
 }
 .input-invalid{
-     
     font-size: large;
     padding: 1ex;
     border-radius: 5px;
@@ -154,11 +159,12 @@ main{
     border-style: hidden;
     box-shadow: 0px 0px 5px 5px red;
 }
+/*Pie de pagina*/
 .footer{
     padding: 1%;
     text-align: center;
-    /* */
     height: 10vh;
+    width: 100vw;
     color: var(--contrast-color);
     background-color: var(--dark-color);
     text-decoration: none;
@@ -177,7 +183,7 @@ main{
     height:3vh;
     min-height: 20px;
 }
-
+/*Mediaquerys: Condicionales segun tamaño de pantalla*/
 @media all and (max-width:760px) {  
     .header-div{
         width:400px;
