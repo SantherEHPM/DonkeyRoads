@@ -1,21 +1,85 @@
-h1{
-    display: flex;
-    padding: 20px;
-    color: aliceblue;
-      flex-wrap: wrap;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: rgb(80, 80, 80);
+:root{ /*Variables, procuren hacer el @import "../styless-basic.css en los individuales"*/
+    --font-title:'Combo', cursive;/*font-weidth:400*/
+    --font-subtitle: 'Oswald', sans-serif;/*font-weidth:300-500*/
+    --font-light: 'Prompt', sans-serif;/*font-weidth:300-400 italic*/
+    --main-color:#FA8100;
+    --dark-color:#7a0600;
+    --second1-color:#E3480B;
+    --second2-color:#EBA707;
+    --second3-color:#FFDD05;
+    --contrast-color: #ffffff;
 }
+*{/*Inicializacion global*/
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-light);
+    box-sizing: border-box;
+}
+h1, h2{/*Configuracion de fuentes*/
+    font-family: var(--font-subtitle);
+}
+/*Encabezado*/
 .header{
-    width: 90%;
     display: flex;
-    justify-content:left;
-    background-color: white ;
-
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 20vh; 
+    padding: 5vh 3vw 5vh 3vw;
+    color: var(--contrast-color);
+    background:  linear-gradient(0,var(--main-color) 40%,var(--second1-color));
 }
+.header-s-icon{
+    margin: auto 0;
+    width: 5vw;
+    min-width: 60px;
+    height: fit-content;
+    filter: invert(100%);
+}
+.header>a{
+    position: relative;
+    bottom:20%;
+    min-height: 10px;
+    height: 1vh;
+}
+a{
+    text-decoration: none;
+    height: fit-content;
+}
+.header>a:hover{
+    border-radius: 25px;
+    box-shadow: 0 4vw  15px 5px #ffffffa2;
+}
+.header-div{
+    width: 600px;
+    text-align: center;
+    height: 100%;
+    display: inline-block;
+}
+.header-div *{
+    vertical-align: top;
+    display: inline-block;
+    margin: auto 10px;
+}
+.header-title{
+    color: var(--contrast-color);
+    font-size: 6vh;
+    font-family: var(--font-title);
+    height: 6vh;
+}
+.header-subtitle{
+    margin: 1vh auto;
+    display: block;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: var(--font-subtitle);
+    font-size: 3vh;
+}
+.header-icon{ 
+    height: 7vh;
+}/*
 .foto{
     display: block;
     position: relative;
@@ -55,7 +119,7 @@ h1{
         box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.116);
         padding: 30px;
 }
-div{
+nav{
     font-size: 40px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgba(182, 182, 182, 0.541);
