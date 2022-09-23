@@ -249,8 +249,10 @@ main{
     text-align: center;
 }
 .buscar-div{
+    display: block;
     margin: 5% 15% 3% 20%;
     text-align: center;
+    margin-top: 20px;
 }
 /*Slider*/
 .slider{
@@ -303,9 +305,10 @@ main{
     text-align: center;
 }
 .card-image{
-    height: 90%;
-    width: 50%;
+    height: 90px;
+    width: 100px;
     vertical-align: middle;
+    object-fit: cover;
 }
 .cards{
     display: flex;
@@ -364,3 +367,8 @@ main{
     text-align: center;
 }
 /*End Cards*/
+
+.pie{
+    border-radius: 2%;
+    border-color: #E3480B;
+}
