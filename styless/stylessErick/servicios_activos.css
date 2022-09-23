@@ -1,0 +1,106 @@
+@import "../styless-basic.css";
+
+main{
+    flex-direction: column ;
+    overflow: scroll;
+    justify-content: flex-start;
+}
+.text > h3, .text{
+    font-weight: 400;
+    font-size: medium;
+}
+.line{
+    display: inline-block;
+}
+.conjunter{
+    width: 65vw;
+    height: auto;
+    margin: 5px;
+}
+.map,.text{
+    width: 30vw;
+    height: auto;
+    vertical-align: top;
+}
+.map{
+    height: 100%;
+}
+.button-main, .button-other{
+    display: inline-block;
+    width: 10vw;
+    height: 5ex;
+    font-size: medium;
+    max-width: 100px;
+    min-width: 85px;
+    vertical-align: bottom;
+}
+.btn-m{
+    position: absolute;
+    visibility: hidden;
+}
+@media (max-width:1050px) {
+    .conjunter{
+        width: 100vw;
+    }
+    .map,.text{
+        width: 45vw;
+    }
+}
+@media (max-width:800px){
+    .text > h3, .text{
+        font-weight: 400;
+        font-size: medium;
+    }
+    .text>h2{
+        font-size: x-large;
+    }
+    .map,.text{
+        width: 40vw;
+    }
+    .button-main, .button-other{
+        font-weight: 400;
+        font-size: medium;
+        max-width: 200px;
+        min-width: 100px;
+    }
+}
+@media (max-width:600px){
+    .text > h3, .text{
+        font-weight: 400;
+        font-size:smaller;
+    }
+    .text>h2{
+        font-size: medium;
+    }
+    .map,.text{
+        width: 40vw;
+    }
+    .button-main, .button-other{
+        font-weight: 400;
+        font-size: smaller;
+        max-width: 200px;
+        min-width: 80px;
+    }
+}
+@media (max-width: 400px){
+    .text{
+        width: 100%;
+    }
+    .btn-m{
+        position: static;
+        visibility: visible;
+    }
+    .map{
+        position: absolute;
+        visibility: hidden;
+    }
+}
+
+@media (max-height:720px){
+    .text, .text *, .text > h3{
+        font-size: smaller;
+    }
+    .text > h2{
+        font-size: small;
+    }
+}

@@ -4,48 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styless/styless-basic.css">
+    <link rel="stylesheet" href="../styless/styless-basic.css">
+    <link rel="stylesheet" href="../styless/stylessErick/servicios_activos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Combo&family=Oswald:wght@300;400;500&family=Prompt:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="icon" href="./assets/img/iconF.png">
+    <link rel="icon" href="../assets/img/iconF.png">
     <title>DonkeyRoads</title>
 </head>
 <body>
     <header class="header">
-        <a href=""><img src="./assets/img/585e4beacb11b227491c3399.png" alt="usuario" class="header-s-icon"></a>
+        <a href=""><img src="../assets/img/585e4beacb11b227491c3399.png" alt="usuario" class="header-s-icon"></a>
         <div class="header-div">
             <a href="">
                 <h1 class="header-title">DonkeyRoads</h1>
-                <img src="./assets/img/iconF.png" alt="logo" class="header-icon">
+                <img src="../assets/img/iconF.png" alt="logo" class="header-icon">
             </a>
-            <h2 class="header-subtitle">Seccion</h2>
+            <h2 class="header-subtitle">Servicios activos</h2>
         </div>
-        <a href=""><img src="./assets/img/search.png" alt="usuario" class="header-s-icon"></a>
+        <a href=""><img src="../assets/img/search.png" alt="usuario" class="header-s-icon"></a>
     </header>
     <main> 
-        <div class="serv-borderl">
-            <div class="left-line-serv">
-                <iframe class="iconw" height="200px" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1988.719076833725!2d-74.0930589!3d4.5147809!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3fa356d4e41fbb%3A0xf4abb8d633e3aedd!2sHelader%C3%ADa%20y%20fruter%C3%ADa%20LECHE%20Y%20MIEL!5e0!3m2!1ses!2sco!4v1662220930434!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="left-line-serv">
-                <h2 class="text">Nombre de transportador/cliente</h2>
-                <h3 class="text">Estado de servicio</h3>
-                <h3 class="text">Fecha y hora del servicio</h3>
-                <h3 class="text">Peso de la carga:</h3>
-                <h3 class="text">Volumen de la carga:</h3>
-                <h3 class="text">Tipo de carga:</h3>
+        <section class="conjunter">
+                <iframe class="line map"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1988.719076833725!2d-74.0930589!3d4.5147809!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3fa356d4e41fbb%3A0xf4abb8d633e3aedd!2sHelader%C3%ADa%20y%20fruter%C3%ADa%20LECHE%20Y%20MIEL!5e0!3m2!1ses!2sco!4v1662220930434!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <div class="line text">
+                <h2>Nombre de transportador/cliente</h2>
+                <h3 >Estado de servicio</h3>
+                <h3 >Fecha y hora del servicio</h3>
+                <h3 >Peso de la carga:</h3>
+                <h3 >Volumen de la carga:</h3>
+                <h3 >Tipo de carga:</h3>
                 <input id="personal" type="checkbox">
                 <label for="personal" class="text" disabled>Personal de carga adicional</label> 
 
-                <div><button class="bttn-p-text">Chat</button><button class="bttn-p-text">Llamar</button><button class="bttn-p-text">Mapa</button><button class="bttn-borderl-text">Cancelar</button></div>
-
-                <div><button class="bttn-p-text">Chat</button><button class="bttn-p-text">Llamar</button><button class="bttn-p-text">Mapa</button><button class="bttn-borderl-text" onclick="cancelar()">Cancelar</button></div>
-
+                <div><button class="button-main">Contactar</button>
+                    <button class="button-main btn-m">Mapa</button>
+                    <button class="button-other">Cancelar</button></div>
             </div>
-        </div>
+        </section>
     </main>
     <footer class="footer">
         <h4 class="footer-text">Derechos reservados de <a href="https://www.uniempresarial.edu.co/" target="_blank" >Uniempresarial</a></h4>

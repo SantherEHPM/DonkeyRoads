@@ -95,6 +95,7 @@ main{
     border-radius: 15px;
     padding: 20px;
     width: fit-content;
+    height: auto;
     border:3px solid #7a0600;
 }
 /*Botones*/
@@ -161,9 +162,9 @@ main{
 }
 /*Pie de pagina*/
 .footer{
-    padding: 1%;
+    padding: 5px;
     text-align: center;
-    height: 10vh;
+    height: 11vh;
     width: 100vw;
     color: var(--contrast-color);
     background-color: var(--dark-color);
@@ -235,18 +236,28 @@ main{
 
 @media all and (max-height:1000px){
     .footer-text{
-       font-size: 14px;
+       font-size: small;
     }
 }
 
-@media all and (max-height:700px){
+@media all and (max-height:500px){
     .header-title{
         font-size: 20px;
     }
     .footer{
+        padding: 2px;
         height: 15vh;
+    }
+    .footer-text{
+        font-size: x-small;
     }
     .header-subtitle{
         font-size: 16px;
+    }
+    .header-s-icon{
+        width: 5vh;
+        height: 5vh;
+        min-height: 30px;
+        min-width: 30px;
     }
 }
