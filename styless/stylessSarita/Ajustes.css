@@ -179,15 +179,15 @@ section{
    margin:-52vh 0px 500px 100vh;
 }
 .op-sesion{
-    margin: -400px 70px 700px 100vh;
+    margin: -400px 70px 400px 100vh;
 }
 
 @media (400px <= width <= 568px ){
     .op-acerca{
-        margin: -32vh 20vh 200px 40vh;
+        margin: -32vh 20vh 200px 36vh;
     }
     .op-sesion{
-        margin: -34vh 0vh 300px 40vh;   
+        margin: -32vh 0vh 500px 36vh;   
     }
     select{
         width: 30%;
@@ -231,7 +231,7 @@ section{
         font-size: 14px;
     }
     .op-sesion{
-        margin: -37vh 0vh 300px 66vh;  
+        margin: -32vh 0vh 100px 66vh;  
         font-size: 14px; 
     }
     section{
