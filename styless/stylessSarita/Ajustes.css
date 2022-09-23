@@ -111,37 +111,26 @@ nav{
 nav:hover{
     box-shadow: 5px 5px 12px -1px rgba(14, 26, 36, 0.363);
 }
-@media (max-width: 576px){
-    nav{
-        font-size: 11px;
-        padding: 15px;
-        margin: 5px 0px 0px 0px;
-        width: 105px;
-    }
-    select, option{
-        font-size: 1px;
-        padding: 15px;
-        margin: -1px -1px -1px -10px;
-        width: 1vh;
-    }
-    section{
-        font-size: 11px;
 
-    }
-
-}
-@media (max-width: 768px){
+@media (100px <= width <= 568px ){
     nav{
         font-size: 12px;
         padding: 15px;
-        margin: 5px 5px 5px 50px;
+        margin: 5px 5px 5px 20px;
         width: 120px;
-    }
-    section{
-        width: 30%;
     }
 
 }
+@media (568px <= width <= 868px ){
+    nav{
+        font-size: 17px;
+        padding: 15px;
+        margin: 5px 5px 5px 20px;
+        width: 200px;
+    }
+
+}
+
 select{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -174,19 +163,38 @@ section{
 .op-sesion{
     margin: -400px 70px 700px 100vh;
 }
-@media (max-width: 768px ){
+
+@media (100px <= width <= 568px ){
     .op-acerca{
-        margin: -28vh 20vh 200px 56vh;
+        margin: -32vh 20vh 200px 40vh;
     }
     .op-sesion{
-        margin: -30vh 0vh 300px 56vh;   
+        margin: -34vh 0vh 300px 40vh;   
     }
     section{
-        font-size: 12px;
+        margin: 5px 5px 5px 20px;
         width: 200px;
+        font-size: 12px;
+
     }
 
 }
+@media (568px <= width <= 868px ){
+    .op-acerca{
+        margin: -30vh 20vh 200px 66vh;
+    }
+    .op-sesion{
+        margin: -30vh 0vh 300px 66vh;   
+    }
+    section{
+        margin: 5px 5px 5px 20px;
+        width: 220px;
+        font-size: 16px;
+
+    }
+
+}
+
 .footer{
     padding: 1%;
     text-align: center;
