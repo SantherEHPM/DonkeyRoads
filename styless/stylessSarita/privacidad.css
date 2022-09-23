@@ -1,5 +1,4 @@
-
-:root{
+:root{ /*Variables, procuren hacer el @import "../styless-basic.css en los individuales"*/
     --font-title:'Combo', cursive;/*font-weidth:400*/
     --font-subtitle: 'Oswald', sans-serif;/*font-weidth:300-500*/
     --font-light: 'Prompt', sans-serif;/*font-weidth:300-400 italic*/
@@ -10,15 +9,16 @@
     --second3-color:#FFDD05;
     --contrast-color: #ffffff;
 }
-*{
+*{/*Inicializacion global*/
     margin: 0;
     padding: 0;
     font-family: var(--font-light);
     box-sizing: border-box;
 }
-h1, h2{
+h1, h2{/*Configuracion de fuentes*/
     font-family: var(--font-subtitle);
 }
+/*Encabezado*/
 .header{
     display: flex;
     flex-wrap: nowrap;
@@ -45,7 +45,8 @@ h1, h2{
     height: 1vh;
 }
 a{
-   height: fit-content; 
+    text-decoration: none;
+    height: fit-content;
 }
 .header>a:hover{
     border-radius: 25px;
@@ -79,21 +80,24 @@ a{
 .header-icon{ 
     height: 7vh;
 }
-.map{
-    margin: 1px ;
-    width: 50px;
-    height: 100pc;
+body{
+    text-align: center;
+ 
 }
-
-.op-acerca {
-    margin: -40vh 70px 0 10vh;
+h2{
+    margin: 60px 20px 50px 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+h4{
+    margin: 60px 20px 80px 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+}
 .footer{
     padding: 1%;
     text-align: center;
-    /* */
     height: 10vh;
+    width: 100vw;
     color: var(--contrast-color);
     background-color: var(--dark-color);
     text-decoration: none;
@@ -112,7 +116,7 @@ a{
     height:3vh;
     min-height: 20px;
 }
-
+/*Mediaquerys: Condicionales segun tamaño de pantalla*/
 @media all and (max-width:760px) {  
     .header-div{
         width:400px;
