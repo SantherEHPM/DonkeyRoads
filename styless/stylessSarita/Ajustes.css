@@ -112,7 +112,7 @@ nav:hover{
     box-shadow: 5px 5px 12px -1px rgba(14, 26, 36, 0.363);
 }
 
-@media (100px <= width <= 568px ){
+@media (400px <= width <= 568px ){
     nav{
         font-size: 12px;
         padding: 15px;
@@ -121,7 +121,15 @@ nav:hover{
     }
 
 }
-@media (568px <= width <= 868px ){
+@media (568px <= width <= 670px ){
+    nav{
+        margin: 5px 5px 5px 20px;
+        padding: 15px;
+        font-size: 13px;
+        width: 150px;
+    }
+}
+@media (670px <= width <= 868px ){
     nav{
         font-size: 17px;
         padding: 15px;
@@ -130,6 +138,16 @@ nav:hover{
     }
 
 }
+@media (width <= 400px ){
+    nav{
+        font-size: 10px;
+        padding: 15px;
+        margin: 5px 5px 5px 0px;
+        width: 100px;
+    }
+
+}
+
 
 select{
     font-family:Arial, Helvetica, sans-serif;
@@ -164,12 +182,18 @@ section{
     margin: -400px 70px 700px 100vh;
 }
 
-@media (100px <= width <= 568px ){
+@media (400px <= width <= 568px ){
     .op-acerca{
         margin: -32vh 20vh 200px 40vh;
     }
     .op-sesion{
         margin: -34vh 0vh 300px 40vh;   
+    }
+    select{
+        width: 30%;
+        height: 40px;
+        font-size: 15px;
+        margin: 15px 3px 15px 17px;
     }
     section{
         margin: 5px 5px 5px 20px;
@@ -179,18 +203,69 @@ section{
     }
 
 }
-@media (568px <= width <= 868px ){
+@media (568px <= width <= 670px ){
     .op-acerca{
-        margin: -30vh 20vh 200px 66vh;
+        margin: -38vh 20vh 200px 50vh;
+        font-size: 13px;
     }
     .op-sesion{
-        margin: -30vh 0vh 300px 66vh;   
+        margin: -30vh 500vh 200px 50vh;
+        font-size: 13px;
+    }
+    section{
+        margin: 5px 5px 5px 20px;
+        width: 150px;
+        font-size: 13px;
+
+    }
+    select{
+        width: 6%;
+        height: 40px;
+        font-size: 14px;
+        margin: 15px 3px 15px 15px;
+    }
+}
+@media (670px <= width <= 868px ){
+    .op-acerca{
+        margin: -37vh 20vh 200px 66vh;
+        font-size: 14px;
+    }
+    .op-sesion{
+        margin: -37vh 0vh 300px 66vh;  
+        font-size: 14px; 
     }
     section{
         margin: 5px 5px 5px 20px;
         width: 220px;
-        font-size: 16px;
+        font-size: 14px;
 
+    }
+    select{
+        width: 30%;
+        height: 40px;
+        font-size: 16px;
+        margin: 15px 3px 15px 17px;
+    }
+
+}
+@media (width <= 400px ){
+    .op-acerca{
+        margin: -30vh 20vh 200px 22vh;
+    }
+    .op-sesion{
+        margin: -34vh 0vh 300px 22vh;   
+    }
+    section{
+        margin: 5px 5px 5px 0px;
+        width: 100px;
+        font-size: 10px;
+
+    }
+    select{
+        width: 30%;
+        height: 40px;
+        font-size: 10px;
+        margin: 15px 3px 15px 4px;
     }
 
 }
