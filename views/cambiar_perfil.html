@@ -21,37 +21,66 @@
         </div>
         <a href=""><img src="../assets/img/search.png" alt="usuario" class="header-s-icon"></a>
     </header>
-    <body>
-        <h1 style="padding: 5px;">Datos</h1>
-        <form style="padding: 0.2in;" id="form">
-      <div class="form-row"  >
-          <div class="form-group col-md-6">
-          <label for="inputNames">Nombre:</label>
-          <input type="text" class="form-control" id="inputNames" placeholder="Nombre">
+  
+        <form class="form">
+    
+            <div class="portada">
+                <div class="avatar">
+                    <img src="" alt="img-avatar">
+                </div>
         </div>
-        <div class="form-group col-md-6">
+        <button type="button" class="boton-avatar">Cambiar foto de perfil
+        </button>
+          <label for="Nombre">Nombre:</label>
+          <input 
+          type="text" 
+          class="control" 
+          name="nombre"
+          id="nombre" 
+          placeholder="Ingrese su nuevo nombre">
+        
             <label for="inputNames">Apellido:</label>
-            <input type="text" class="form-control" id="inputNames" placeholder="Apellido">
-          </div>
-        <div class="form-group col-md-2">
-          <label for="inputTel">Número de teléfono:</label>
-          <input type="number" class="form-control" id="inputTel">
-        </div>
-      </div>
-        <div class="form-group col-md-6">
-          <label for="inputEmail">Correo electrónico:</label>
-          <input type="email" class="form-control" id="inputEmail" placeholder="correo/email">
-        </div>    
-      </div>  
-      <div class="form-group">
-        <div class="form-check">
-      <button type="submit" id="btnDatos" class="btn btn-info">Enviar Datos</button>
-    </form>
+            <input 
+            type="text" 
+            class="control" 
+            name="apellido"
+            id="apellido" 
+            placeholder="Apellido">
 
-    <button type="button" id="comunic">Guardar cambios
+          <label for="inputTel">Número de teléfono:</label>
+          <input 
+          type="number" 
+          class="control" 
+          id="inputTel"
+          name= "telefono"
+          placeholder="Número de teléfono">
+       
+          <label for="inputDocument">Número de Documento:</label>
+          <input 
+          type="number" 
+          class="control" 
+          id="inputDocument"
+          min="2"
+          max="999999999"
+          name="dcument"
+          placeholder="Su ID no será pública">
+
+        
+          <label for="inputEmail">Correo electrónico:</label>
+          <input 
+          type="email" 
+          class="control" 
+          id="inputEmail" 
+          placeholder="Correo/Email">
+         
+        <div class="form-check">
+
+    <button type="submit" id="btnDatos" class="btn btn-info" >Guardar cambios
     </button>
-    <button type="button" id="comunic">Cerrar sesión
+    <button type="submit" id="btnDatos" class="btn btn-info">cancelar
     </button>
+        </div>
+  </form>
     <script src="../scripts/camPerfil.js"></script>
 </body>
 </html>
