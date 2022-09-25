@@ -163,6 +163,7 @@ select{
     border-radius: 2px;
     cursor: pointer;
     transition: .4s;
+    
 }
 select:hover{
     box-shadow: 5px 5px 12px -1px rgba(14, 26, 36, 0.363);

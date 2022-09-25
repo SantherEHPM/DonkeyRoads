@@ -79,7 +79,153 @@ a{
 }
 .header-icon{ 
     height: 7vh;
-}/*
+}
+.avatar{
+    width: 270px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 12px solid #000000b0;
+    background-color: rgb(226, 226, 226);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 200px;
+    left: calc(50% - 120px);
+    box-shadow: 0 0 15px #00000049;
+}
+.form{
+    width: 40%;
+    height: auto;
+    margin: 18% auto;
+    border-radius: 10px;
+    border: 4px solid #3C3D59 ;
+    padding: 25px 10px;
+    text-align: center;
+    
+}
+.form > input,label,button,select {
+    display: inline-block;
+    width: 80%;
+    margin: 3% 0;
+    font-size: 20px;
+}
+.form > input{
+    padding: 10px 2px;
+    border: none;
+    border-bottom: 1px solid #f25757;
+    outline: none;
+}
+.form > label{
+    text-align: left;
+    padding: 5px;
+}
+
+.btn {
+    background: #BA0800;
+    background: linear-gradient(top, #850700, #BA0800);    
+    background: linear-gradient(to bottom, #E3480B, #d89a08);
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #f2b366 2px;
+    text-decoration: none;
+    cursor: pointer;
+  }  
+  .btn:hover {
+    background: #f2db63;
+    background:linear-gradient(top, #f2db63, #f2b366);   
+    background: linear-gradient(to bottom, #f2db63, #f2b366);
+    text-decoration: none;
+  }
+  .boton-avatar{
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    right: 17rem;
+    width: 200px;
+    top:10rem;
+    padding: 12px;
+    background-color: rgb(122, 21, 30);
+    color: aliceblue;
+    position: absolute;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(15, 31, 26, 0.514);
+}
+
+  .alerta{
+    width: 25%;
+    height: 100px;   
+    background: #f25757;   
+    position: fixed;
+    top: calc(100vh - 400px);
+    left: 600px;
+    text-align: center; 
+    cursor: pointer;   
+  }
+  
+  .textAlerta{
+    width: 100%;
+    margin-top: 12%;
+    color: aliceblue;
+  }
+
+@media screen and (max-width: 768px) {
+    .form{
+        width: 60%;    
+        margin: 30% auto;   
+        border: 2px solid #3C3D59 ;
+        padding: 15px 5px;    
+    }
+    .boton-avatar{
+        right: 1rem;
+    width: 190px;
+    top:9rem;
+    }
+    .avatar{
+        max-height: 250px;
+        max-width: 250px;
+        margin: 4% auto;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .form{
+        width: 70%;    
+        margin: 33% auto 3% auto;   
+        padding: 10px 2px;  
+        border: 1px solid #3C3D59 ;  
+    }
+    .form > input,label,button,select {     
+        margin: 2% 0;
+        font-size: 16px;
+    }
+    .form > input{
+        padding: 5px 1px;        
+    }
+    .form > label{       
+        padding: 2px;
+    }
+    .btn{
+        font-size: 16px;
+    }
+    .avatar{
+        height: 180px;
+        width: 180px;
+        bottom: 47%;
+        left: calc(50% - 90px);
+    }
+    .boton-avatar{
+        font-size: 12px;
+        height: 40px;
+        width: 150px;
+    }
+}
+
+
+/*
 .foto{
     display: block;
     position: relative;
