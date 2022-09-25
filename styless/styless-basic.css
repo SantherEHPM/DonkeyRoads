@@ -15,6 +15,10 @@
     font-family: var(--font-light);
     box-sizing: border-box;
 }
+body{
+    width: 100vw;
+    height:100vh;
+}
 h1, h2{/*Configuracion de fuentes*/
     font-family: var(--font-subtitle);
 }
@@ -164,7 +168,7 @@ main{
 .footer{
     padding: 5px;
     text-align: center;
-    height: 11vh;
+    height: 10vh;
     width: 100vw;
     color: var(--contrast-color);
     background-color: var(--dark-color);
@@ -184,6 +188,32 @@ main{
     height:3vh;
     min-height: 20px;
 }
+/*Modal de cancelacion*/
+.div-modal{
+    position: absolute;
+    top:25%;
+    left:30%;
+    margin: 0 auto;
+    width: 40vw !important;
+    min-width: 350px;
+    height: fit-content;
+    text-align: center;
+    background-color: white;
+}
+.div-modal>textarea{
+    margin: 10px;
+    width: 80%;
+    height: 15ex;
+}
+.div-modal *{
+    font-size: larger;
+    font-family: var(--font-light);
+}
+.button-main[id="enviar-modal"]{
+    margin: 0 auto;
+    display: block;
+}
+
 /*Mediaquerys: Condicionales segun tamaño de pantalla*/
 @media all and (max-width:760px) {  
     .header-div{
@@ -198,6 +228,11 @@ main{
     }
     .header-title{
         font-size: 4vh;
+    }
+    .div-modal{
+        left: 0;
+        width: 100vw !important;
+        border-radius: 0;
     }
 }
 @media all and (max-width:580px) { 

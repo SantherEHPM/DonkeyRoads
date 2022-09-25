@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styless/styless-basic.css">
-    <link rel="stylesheet" href="../styless/stylessErick/servicios_activos.css">
+    <link rel="stylesheet" href="../styless/stylessErick/servicios_disponibles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,36 +27,35 @@
         <a href=""><img src="../assets/img/search.png" alt="usuario" class="header-s-icon"></a>
     </header>
     <main>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5959475590316!2d-74.05939339999999!3d4.6659038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a58acba24a3%3A0x2a56fce1b365ff98!2sCra.%2018%20%2378-74%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1664051739413!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="white-bk">
+        </section>
     </main>
-    <template id="service"> 
-        <section class="conjunter">
-                <iframe class="line map"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1988.719076833725!2d-74.0930589!3d4.5147809!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3fa356d4e41fbb%3A0xf4abb8d633e3aedd!2sHelader%C3%ADa%20y%20fruter%C3%ADa%20LECHE%20Y%20MIEL!5e0!3m2!1ses!2sco!4v1662220930434!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
-            <div class="line text">
+    <template id="service">
+            <div class="conjunter">
                 <h2>Nombre de transportador/cliente</h2>
-                <h3 >Estado de servicio</h3>
                 <h3 >Fecha y hora del servicio</h3>
                 <h3 >Peso de la carga:</h3>
-                <h3 >Volumen de la carga:</h3>
-                <h3 >Tipo de carga:</h3>
-                <input id="personal" type="checkbox">
-                <label for="personal" class="text" disabled>Personal de carga adicional</label> 
+                <h3 class="hidden">Volumen de la carga:</h3>
+                <h3 class="hidden">Tipo de carga:</h3>
+                <input id="personal" class="hidden" type="checkbox"  checked>
+                <label for="personal" class="hidden" class="text" >Personal de carga adicional</label> 
 
-                <div><button class="button-main" >Contactar</button>
-                    <button class="button-main btn-m">Mapa</button>
-                    <button class="button-other" id="cancelar">Cancelar</button></div>
+                <div>
+                    <a class="button-main btn-m">Ubicar</a>
+                    <a class="button-main">Detalles</a>
+                    <a class="button-other">Aceptar</a>
+                </div>
             </div>
-        </section>
     </template>
     <footer class="footer">
         <h4 class="footer-text">Derechos reservados de <a href="https://www.uniempresarial.edu.co/" target="_blank" >Uniempresarial</a></h4>
         <a href="https://github.com/SantherEHPM/DonkeyRoads.git" target="_blank">
-            <svg class="mini-icon"  xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <svg class="mini-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
             </svg>
         </a>
     </footer>
-    <script src="../scripts/generador_servicios.js" type="module"></script>
-    <script src="../scripts/validacion_modal.js"></script>
+    <script src="../scripts/generador_disponibles.js" type="module"></script>
 </body>
 </html>

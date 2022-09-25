@@ -3,6 +3,7 @@
 main{
     width: 100vw;
     height: 70vh;
+    flex-direction: column;
 }
 .taps{
     width: 100%;
