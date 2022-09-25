@@ -1,0 +1,87 @@
+@import "../styless-basic.css";
+
+main, .map{
+    position: relative;
+    display: block !important;
+    width: 100vw;
+    height: 70vh;
+}
+.conjunter{
+    background-color: white;
+    width: 40vw;
+    max-width: 500px;
+    margin: 5px;
+}
+.conjunter>h2{
+    font-size: 3vh;
+}
+.conjunter > h3, .conjunter>label,.conjunter a{
+    font-size: 2vh;
+    font-family: var(--font-light);
+    font-weight: 400;
+}
+[class^="button"]{
+    display: inline-block;
+    text-align: center;
+    width: 10vw;
+    max-width: 120px;
+    height: 5ex;
+}
+.white-bk{
+    position:  absolute;
+    overflow-y: scroll;
+    top:0;
+    right: 1px;
+    height: 100%;
+    width: auto;
+    padding: 5px;
+    padding-right: 1px;
+}
+
+@media (max-height:700px) or (max-width:800px){
+    main{
+        overflow: hidden;
+    }
+    .white-bk{
+        background-color: aliceblue;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        position: absolute;
+        width: 1600px;
+        height: auto;
+        top: unset;
+        right: unset;
+        left: 0px;
+        bottom: 1px;
+    }
+    .conjunter{
+        display: inline-block;
+        width: auto;
+    }
+    .conjunter > h3, .conjunter>label,.conjunter a{
+        font-size: 1.5vh;
+        font-family: var(--font-light);
+        font-weight: 400;
+    }
+    .conjunter>h2{
+        font-size: larger;
+    }
+    [class^="button"]{
+        height: 2.5em;
+        width: 15vw;
+        min-width: 80px;
+        max-width: 110px;
+    }
+    .hidden{
+        position: absolute;
+        visibility: hidden;
+    }
+}
+@media (max-height:700px){
+    .conjunter > h3, .conjunter>label,.conjunter a{
+        font-size: 12px;
+    }
+    .conjunter{
+        padding: 12px;
+    }
+}

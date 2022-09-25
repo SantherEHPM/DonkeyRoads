@@ -1,9 +1,12 @@
 @import "../styless-basic.css";
-
+body{
+    overflow: hidden;
+}
 main{
-    flex-direction: column ;
-    overflow: scroll;
-    justify-content: flex-start;
+    display: block;
+    overflow-y: scroll;
+    height: 70vh;
+    width: 100vw;
 }
 .text > h3, .text{
     font-weight: 400;
@@ -15,7 +18,7 @@ main{
 .conjunter{
     width: 65vw;
     height: auto;
-    margin: 5px;
+    margin: 5px auto;
 }
 .map,.text{
     width: 30vw;
