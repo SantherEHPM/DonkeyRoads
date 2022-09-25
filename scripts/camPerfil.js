@@ -57,6 +57,13 @@ documento.addEventListener('change', (event)=>{
     console.log(Object.values(validFields));
 });
 
+correo.addEventListener('change',(event)=>{
+    const inputCorreo = event.target.value;
+    const patronCorreo = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/g;
+    validFields.email = inputCorreo.match(patronCorreo) ? true : false;
+    console.log(Object.values(validFields));
+});
+
 
 /*
 //validacion de formulario
