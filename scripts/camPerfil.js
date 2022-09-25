@@ -10,6 +10,7 @@ const formulario = document.querySelector('#form');
 let validFields = {
     nom: false,
     apel: false,
+    tel: false,
     id: false,
     email: false,
     form: false
@@ -21,6 +22,41 @@ nombre.addEventListener('change', (event)=>{
     validFields.nom = inputName.match(patronName) ? true : false;
     console.log(Object.values(validFields));
 });
+
+apellido.addEventListener('change', (event)=>{
+    const inputApel = event.target.value;
+    const patronApel = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,50})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,50})$/g;
+    validFields.apel = inputApel.match(patronApel) ? true : false;
+    console.log(Object.values(validFields));
+});
+
+telefono.addEventListener('change', function(e){
+    const inputTel = event.target.value;
+    const patronTel = /(^[0-9]{10}$)/g;
+    validFields.tel = inputTel.match(patronTel) ? true : false;
+    console.log(Object.values(validFields));
+
+ //   console.log('en telefono');
+ /*   const patronTel = /(^[0-9]{10}$)/g;
+        if(parseInt(telefono.value) >=3000000000){
+        if (telefono.value.match(patronTel)){
+            validFields.telefono = true;
+        }else{
+            alert("Por favor, digite un número de teléfono válido");
+        }
+    }else{
+        alert("Por favor, digite un número de teléfono válido");
+    }
+        console.log(Object.values(validFields));*/
+});
+
+documento.addEventListener('change', (event)=>{
+    const inputID = event.target.value;
+    const patronID = /(^[0-9]{10}$)/gm;
+    validFields.id = inputID.match(patronID) ? true : false;
+    console.log(Object.values(validFields));
+});
+
 
 /*
 //validacion de formulario
