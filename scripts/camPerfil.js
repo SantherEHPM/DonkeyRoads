@@ -1,12 +1,28 @@
 'use strict';
 
-const nombres = document.querySelector('#inputNames');
-const edad = document.querySelector('#inputAge');
+const nombre = document.querySelector('#inputNombre');
+const apellido = document.querySelector('#inputApellido');
+const telefono = document.querySelector('#inputTel');
+const documento = document.querySelector('#inputDocument');
 const correo = document.querySelector('#inputEmail');
-const ciudad = document.querySelector('#inputCity');
-const politicaData = document.querySelector('#checkPolitica');
 const formulario = document.querySelector('#form');
 
+let validFields = {
+    nom: false,
+    apel: false,
+    id: false,
+    email: false,
+    form: false
+}
+
+nombre.addEventListener('change', (event)=>{
+    const inputName = event.target.value;
+    const patronName = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,50})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,50})$/g;
+    validFields.nom = inputName.match(patronName) ? true : false;
+    console.log(Object.values(validFields));
+});
+
+/*
 //validacion de formulario
 formulario.addEventListener("submit", (e)=>{
     e.preventDefault();
@@ -70,4 +86,4 @@ ciudad.addEventListener('change',(event)=>{
     const patronCiudad = /^([a-z]{9})$/g;
     validFields.mail = inputCiudad.match(patronCiudad) ? true : false;
     console.log(Object.values(validFields));
-});
+});*/
