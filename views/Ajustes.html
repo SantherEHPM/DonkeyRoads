@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styless/stylessSarita/Ajustes.css">
-    <title>DonkeyRoads-Ajustes</title>
+    <link rel="stylesheet" href="../styless/stylessSarita/ajustes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Combo&family=Oswald:wght@300;400;500&family=Prompt:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="icon" href="../assets/img/iconF.png">
+     <title>DonkeyRoads-Ajustes</title>
 </head>
 <body>
     <header class="header">
@@ -21,12 +26,8 @@
     </header>
     <main class="container">
         
-        <nav class="op-perfil">
-            <h3><a href="../views/cambiar_perfil.html" target="_blank" >Perfil</a></h3>
-        </nav>
-       <!--- <div class="op-idioma">
-            <h3>Idioma</h3>
-        </div>-->
+        <a href="./cambiarPerfil.html" class="btn perfil">Cambiar información de perfil</a>&nbsp;&nbsp;
+        <a href="./privacidad.html" class="btn privaci">Política de privacidad</a>
         <select class="idioma" name="op.idioma">
             <option value="0" selected>Escoja su idioma</option>
                 <option value="español">Español</option>
@@ -38,23 +39,13 @@
                 <h3>Uso de la Aplicación con la Pantalla Bloqueada</h3>
                 <p>Mostrar ubicación del cliente o conductor, tiempo de llegada, etc.</p>
             </section>
-            <!-- <form action="">
-                <nav class="switch">
-                    <input type="checkbox" id="check">
-                    <label for="check"></label>
-                </nav>-->
-        <nav class="op-privaci">
-            <h3><a href="../views/privacidad.html" target="_blank" >Privacidad</a></h3>
-        </nav>
-        <nav class="op-terms">
-            <h3>Términos y condiciones</h3>
-        </nav>
-        <nav class="op-acerca">
-            <h3>Acerca de DonkeyRoads</h3>
-        </nav>
-        <nav class="op-sesion">
-            <h3>Cerrar Sesión</h3>
-        </nav>
+            <div class="boton">
+                <input type="checkbox" id="btn-switch">
+                <label for="btn-switch" class="label-s"></label>
+            </div>
+        <a href="./terminosCondiciones.html" class="btn terms">Terminos y condiciones</a>&nbsp;&nbsp;
+        <a href="../index.html" class="btn acerca">Acerca de DonkeyRoads</a>
+        <a href="." class="btn cerrar">Cerrar sesión</a>
     </main>
     <footer class="footer">
         <h4 class="footer-text">Derechos reservados de <a href="https://www.uniempresarial.edu.co/" target="_blank" >Uniempresarial</a></h4>

@@ -78,6 +78,41 @@ a{
 .header-icon{ 
     height: 7vh;
 }
+.btn{
+    font-size: large;
+    padding: 1ex;
+    width: 50ex ;
+    line-height: normal;
+    height: 6ex;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 2px  solid var(--dark-color);
+    color: var(--dark-color);
+}
+.btn:active{
+    border-width: 3px;
+    color: var(--second1-color);
+    border-style: solid;
+    background-color: var(--second2-color);
+    border-color: var(--second1-color);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #c0c0c0;
+}
+.btn.cerrar{
+    background-color: #ebebeb;
+    margin: 0vh 0vh 30px 36vh;
+    text-align: center;
+}
+.btn.cerrar:hover{
+    cursor: pointer;
+    background-color: #c0c0c0;
+}
+.btn.acerca{
+    margin: -19vh 0vh 0px 90vh;
+}
 body{ 
     font-size: 16px;
 }
@@ -93,74 +128,18 @@ body{
     grid-template-rows: repeat (4, auto);
     
 }
-nav{
-    font-family:Arial, Helvetica, sans-serif;
-    margin: 50px;
-    background-color: rgba(182, 182, 182, 0.541);
-    border-width: 2px;
-    padding:25px 1px 25px;
-    padding-left: 20px;
-    border: 10px;
-    box-shadow: 1px 4px 9px 1px rgba(0, 0, 0, 0.11);
-    width: 400px;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: .4s;
-}
-
-nav:hover{
-    box-shadow: 5px 5px 12px -1px rgba(14, 26, 36, 0.363);
-}
-
-@media (400px <= width <= 568px ){
-    nav{
-        font-size: 12px;
-        padding: 15px;
-        margin: 5px 5px 5px 20px;
-        width: 120px;
-    }
-
-}
-@media (568px <= width <= 670px ){
-    nav{
-        margin: 5px 5px 5px 20px;
-        padding: 15px;
-        font-size: 13px;
-        width: 150px;
-    }
-}
-@media (670px <= width <= 868px ){
-    nav{
-        font-size: 17px;
-        padding: 15px;
-        margin: 5px 5px 5px 20px;
-        width: 200px;
-    }
-
-}
-@media (width <= 400px ){
-    nav{
-        font-size: 10px;
-        padding: 15px;
-        margin: 5px 5px 5px 0px;
-        width: 100px;
-    }
-
-}
-
 
 select{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 18px;
-    margin: 5px 5px 3px 50px;
-    background-color: rgba(182, 182, 182, 0.541);
+    margin: 50px 5px 5px 0px;
+    background-color: rgba(255, 255, 255, 0.541);
     border-width: 2px;
-    padding-left: -50px;
-    border: 10px;
+    border: 60px rgb(102, 0, 0);
     height: 60px;
-    box-shadow: 1px 4px 9px 1px rgba(0, 0, 0, 0.11);
-    width: 61vh;
-    border-radius: 2px;
+    box-shadow: 1px 4px 9px 1px rgba(0, 0, 0, 0.301);
+    width: 72vh;
+    border-radius: 8px;
     cursor: pointer;
     transition: .4s;
     
@@ -184,17 +163,22 @@ section{
 }
 
 @media (400px <= width <= 568px ){
-    .op-acerca{
-        margin: -32vh 20vh 200px 36vh;
+    .btn{
+        width: 30ex ;
+        font-size: 12px;
     }
-    .op-sesion{
-        margin: -32vh 0vh 500px 36vh;   
+    .btn.acerca{
+        margin: -16vh 0vh 30px 36vh;
+        width: 25ex ;
+    }
+    .btn.cerrar{
+        margin: 0vh 0vh 30px 16vh;
     }
     select{
         width: 30%;
         height: 40px;
         font-size: 15px;
-        margin: 15px 3px 15px 17px;
+        margin: 15px 600px 15px 0px;
     }
     section{
         margin: 5px 5px 5px 20px;
@@ -205,13 +189,16 @@ section{
 
 }
 @media (568px <= width <= 670px ){
-    .op-acerca{
-        margin: -38vh 20vh 200px 50vh;
-        font-size: 13px;
+    .btn{
+        width: 30ex ;
+        font-size: 12px;
     }
-    .op-sesion{
-        margin: -30vh 500vh 200px 50vh;
-        font-size: 13px;
+    .btn.acerca{
+        margin: -16vh 0vh 30px 36vh;
+        width: 25ex ;
+    }
+    .btn.cerrar{
+        margin: 0vh 0vh 3px 16vh;
     }
     section{
         margin: 5px 5px 5px 20px;
@@ -220,20 +207,24 @@ section{
 
     }
     select{
-        width: 6%;
+        width: 41%;
         height: 40px;
         font-size: 14px;
-        margin: 15px 3px 15px 15px;
+        margin: 15px 0px 15px 0px;
     }
 }
 @media (670px <= width <= 868px ){
-    .op-acerca{
-        margin: -37vh 20vh 200px 66vh;
-        font-size: 14px;
+    .btn{
+        width: 40ex ;
+        font-size: 16px;
     }
-    .op-sesion{
-        margin: -32vh 0vh 100px 66vh;  
-        font-size: 14px; 
+    .btn.acerca{
+        margin: -18vh 0vh 30px 60vh;
+        width: 30ex ;
+    }
+
+    .btn.cerrar{
+        margin: 0vh 0vh 30px 20vh;
     }
     section{
         margin: 5px 5px 5px 20px;
@@ -242,20 +233,16 @@ section{
 
     }
     select{
-        width: 30%;
+        width: 50%;
         height: 40px;
         font-size: 16px;
-        margin: 15px 3px 15px 17px;
+        margin: 15px 30px 15px 4px;
+
     }
 
 }
 @media (width <= 400px ){
-    .op-acerca{
-        margin: -30vh 20vh 200px 22vh;
-    }
-    .op-sesion{
-        margin: -34vh 0vh 300px 22vh;   
-    }
+    
     section{
         margin: 5px 5px 5px 0px;
         width: 100px;
@@ -267,6 +254,70 @@ section{
         height: 40px;
         font-size: 10px;
         margin: 15px 3px 15px 4px;
+    }
+    .btn.cerrar{
+        margin: 0vh 0vh 30px 6vh;
+    }
+    .boton{
+
+        margin: -10px 0px 0px -10px;
+        margin-left: 190vh;
+    }
+
+}
+.boton{
+
+    margin: -130px 0px 0px 100px;
+    margin-left: 70vh;
+}
+    
+.label-s{
+    
+    display: inline-block;
+    width: 55px; 
+    height: 30px;
+    background: #aaa; 
+    border-radius: 100px;
+    position: relative; 
+    cursor: pointer;
+ }
+ #btn-switch:checked- .label-s{ 
+   
+    background: #ff8801;
+
+ } 
+
+ .label-s:after{
+ 
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: #fff; 
+    border-radius: 100px;
+    top: 4px;
+    left: 5px;
+    transition: 0.3s;
+ 
+ }
+
+ #btn-switch:checked- .label-s:after{ 
+   
+    left: 28px;
+
+ }  
+
+ #btn-switch {
+ 
+ display: none;
+ 
+ }
+ @media (200px <= width <= 670px ){
+    
+    .boton{
+
+        margin: -100px 0px 5px 40px;
+        margin-left: 40vh;
     }
 
 }

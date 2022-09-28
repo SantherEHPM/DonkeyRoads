@@ -184,23 +184,28 @@ a{
     padding: 5px;
 }
 
-.btn {
-    background: #BA0800;
-    background: linear-gradient(top, #850700, #BA0800);    
-    background: linear-gradient(to bottom, #E3480B, #d89a08);
-    border-radius: 28px;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    border: solid #f2b366 2px;
-    text-decoration: none;
-    cursor: pointer;
+.btn{
+    font-size: large;
+    padding: 1ex;
+    width: auto;
+    line-height: normal;
+    height: 6ex;
+    background: var(--main-color);
+    border-radius: 5px;
+    border: 5px  solid  #7a0600;
+    border-style: none solid solid none;  
+    
   }  
+  .btn:active{
+    border-width: 3px;
+    color: var(--second1-color);
+    border-style: solid;
+    background-color: var(--second2-color);
+    border-color: var(--second1-color);
+}
+
   .btn:hover {
-    background: #f2db63;
-    background:linear-gradient(top, #f2db63, #f2b366);   
-    background: linear-gradient(to bottom, #f2db63, #f2b366);
-    text-decoration: none;
+    cursor: pointer;
   }
   .boton-avatar{
     font-size: 15px;
