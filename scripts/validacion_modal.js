@@ -21,8 +21,9 @@ setTimeout(()=>{
         bttnEnv=document.querySelector('#enviar-modal');
         bttnEnv.addEventListener("click",()=>{
             let textArea = document.querySelector("#razon");
-            textArea.value.match(/^([a-zA-ZÀ-ÖØ-öø-ÿ;0-9]{10})([a-zA-ZÀ-ÖØ-öø-ÿ;0-9])+/g)?borrarMod():alert("Tiene que ingresar una razon para cancelar el servicio \n Debe tener por lo menos 100 letras");
-            console.log(divModal.contains);
+            
+            if(textArea.value.match(/^([a-zA-ZÀ-ÖØ-öø-ÿ;0-9]{100})([a-zA-ZÀ-ÖØ-öø-ÿ;0-9])+/g)){
+            borrarMod();
             divModal = document.createElement("div");
             divModal.id = "modal-bk";
             divModal.className = "div-modal conjunter";
@@ -31,7 +32,11 @@ setTimeout(()=>{
             document.body.appendChild(divModal);
             setTimeout(()=>{
                 borrarMod();
-            },7000);
+            },3000);
+            }
+            else{
+            alert("Tiene que ingresar una razon para cancelar el servicio \n Debe tener por lo menos 100 letras");
+            }
         });
     });
 },500);
