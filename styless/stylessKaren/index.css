@@ -1,0 +1,125 @@
+.title1{
+    text-align: center;
+    margin-top: 4%;
+}
+.div-title1{
+    text-align: center;
+}
+.p1{
+    font-size: 20px;
+}
+.button-main{
+    margin-top: 2%;
+}
+/*Contenedor Mudanza.....*/
+.contenedor-AM{
+    margin: 10px;
+    padding: 5px;
+}
+.box-S{
+   width: 500px;
+   height: 80%;
+   padding: 25px;
+   box-sizing: border-box;
+   margin: auto;
+   text-align: center;
+   box-shadow: 0 0 5px 0 black;
+}
+.box-Image{
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 15px auto;
+    padding-top: 10px;
+    border-radius: 70%;
+    object-fit: cover;
+}
+.div-MA{
+    width: 100%;
+    margin: 5% 5% 5% 5%;
+    text-align: justify;
+}
+.tit-S{
+    text-align: center;
+    margin-top: 5px;
+    margin: auto;
+}
+.segP{
+    text-align: justify;
+}
+/*Sección de Clientes*/
+.img-Clientes{
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 15px auto;
+    padding-top: 10px;
+    object-fit: cover;
+}
+.box-Clientes{
+    width: 500px;
+    height: 80%;
+    padding: 25px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 5px 0 black;
+ }
+/*Sección de pagos*/
+.cont-pagos{
+    margin: 10px;
+    padding: 5px;
+}
+.img-Pagos{
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 15px auto;
+    padding-top: 10px;
+    object-fit: cover;
+}.pago-h2{
+    margin-top: 5px;
+    margin: auto;
+}
+/**********************/
+/*Slider*/
+.slider{
+    width: 100vh;
+    height: fit-content;
+    padding: 0;
+    margin: 1em auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 100vw;
+    animation: cambio 15s infinite alternate linear;
+}
+.slider li{
+    width: 100vw;
+    height: 50vh;
+
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+@keyframes cambio{
+    0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+.div-end{
+    margin-inline-start: 5%;
+    margin-block-end: 30%;
+}
+/*End Slider*/
