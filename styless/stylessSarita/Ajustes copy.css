@@ -171,11 +171,14 @@ section{
         margin: -16vh 0vh 30px 36vh;
         width: 25ex ;
     }
+    .btn.cerrar{
+        margin: 0vh 0vh 30px 16vh;
+    }
     select{
         width: 30%;
         height: 40px;
         font-size: 15px;
-        margin: 15px 3px 15px 17px;
+        margin: 15px 600px 15px 0px;
     }
     section{
         margin: 5px 5px 5px 20px;
@@ -186,13 +189,16 @@ section{
 
 }
 @media (568px <= width <= 670px ){
-    .op-acerca{
-        margin: -38vh 20vh 200px 50vh;
-        font-size: 13px;
+    .btn{
+        width: 30ex ;
+        font-size: 12px;
     }
-    .op-sesion{
-        margin: -30vh 500vh 200px 50vh;
-        font-size: 13px;
+    .btn.acerca{
+        margin: -16vh 0vh 30px 36vh;
+        width: 25ex ;
+    }
+    .btn.cerrar{
+        margin: 0vh 0vh 3px 16vh;
     }
     section{
         margin: 5px 5px 5px 20px;
@@ -201,20 +207,24 @@ section{
 
     }
     select{
-        width: 6%;
+        width: 41%;
         height: 40px;
         font-size: 14px;
-        margin: 15px 3px 15px 15px;
+        margin: 15px 0px 15px 0px;
     }
 }
 @media (670px <= width <= 868px ){
-    .op-acerca{
-        margin: -37vh 20vh 200px 66vh;
-        font-size: 14px;
+    .btn{
+        width: 40ex ;
+        font-size: 16px;
     }
-    .op-sesion{
-        margin: -32vh 0vh 100px 66vh;  
-        font-size: 14px; 
+    .btn.acerca{
+        margin: -18vh 0vh 30px 60vh;
+        width: 30ex ;
+    }
+
+    .btn.cerrar{
+        margin: 0vh 0vh 30px 20vh;
     }
     section{
         margin: 5px 5px 5px 20px;
@@ -223,20 +233,16 @@ section{
 
     }
     select{
-        width: 30%;
+        width: 50%;
         height: 40px;
         font-size: 16px;
-        margin: 15px 3px 15px 17px;
+        margin: 15px 30px 15px 4px;
+
     }
 
 }
 @media (width <= 400px ){
-    .op-acerca{
-        margin: -30vh 20vh 200px 22vh;
-    }
-    .op-sesion{
-        margin: -34vh 0vh 300px 22vh;   
-    }
+    
     section{
         margin: 5px 5px 5px 0px;
         width: 100px;
@@ -248,6 +254,9 @@ section{
         height: 40px;
         font-size: 10px;
         margin: 15px 3px 15px 4px;
+    }
+    .btn.cerrar{
+        margin: 0vh 0vh 30px 6vh;
     }
 
 }
