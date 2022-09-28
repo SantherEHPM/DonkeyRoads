@@ -31,10 +31,10 @@
             <article>
                 <h2 class="title5">configuración  Tarjeta Credito</h2>
                 <form id="tarjetacredito">
-                    <label class="legend" for="tarjetadebito"></label>
+                    <label class="legend" for="tarjetacredito"></label>
                     <input class="icampo"
                         type="text" 
-                        id="ndebito" 
+                        id="ncredito" 
                         name="tarjetadebito" 
                         placeholder="Introduce su numero de tarjeta debito"
                         minlength="3" 
@@ -46,12 +46,11 @@
                         <br><br>
                     <label class="legend2" for="fechadeexpedicion"></label>
                     <input class="icampo2"
-                        type="text" 
+                        type="date" 
                         id="fechaex" 
                         placeholder="Introduce su fecha de expedicion"
                         name="fechadeexpedicion" 
-                        minlength="3" 
-                        maxlength="50"
+                        max="2022-09-27"
                         tabindex="0"
                         autofocus="true"
                         autocomplete="off"
@@ -70,7 +69,7 @@
                             autocomplete="off"
                             required>
                             <br><br>
-                    <button class="bttn7 button-main" id="guardar">guardar</button>
+                    <div class="guardar"><button class="bttn7 button-main" id="guardar">guardar</button></div>
                     </form>
             </article>
     </main>
@@ -82,6 +81,6 @@
             </svg>
         </a>
     </footer>
-    <script src=""></script>
+    <script src="../scripts/tarjetacredito.js"></script>
 </body>
 </html>

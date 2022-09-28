@@ -10,14 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Combo&family=Oswald:wght@300;400;500&family=Prompt:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="icon" href="/assets/img/iconF.png">
-    <link rel="stylesheet" href="/styless/stylessNicolas/styless.css">
+    <link rel="icon" href="../assets/img/iconF.png">
+    <link rel="stylesheet" href="../styless/stylessNicolas/styless.css">
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <title>DonkeyRoads</title>
 </head>
 <body>
     <header class="header">
-        <a href=""><img src="/assets/img/585e4beacb11b227491c3399.png" alt="usuario" class="header-s-icon"></a>
+        <a href=""><img src="../assets/img/585e4beacb11b227491c3399.png" alt="usuario" class="header-s-icon"></a>
         <div class="header-div">
             <a href="">
                 <h1 class="header-title">DonkeyRoads</h1>
@@ -28,52 +28,50 @@
         <a href=""><img src="../assets/img/search.png" alt="usuario" class="header-s-icon"></a>
     </header>
     <main> 
-         <section>
-        <p class="textn1">configuración</p><p class="textn2">Tarjeta de credito</p>
-        <br><br>
-        <form id="tarjetadebito">
-            <label class="legend" for="tarjetadebito"></label>
-            <input class="icampo5"
-                type="text" 
-                id="ndebito" 
-                name="tarjetadebito" 
-                placeholder="Introduce su numero de tarjeta debito"
-                minlength="3" 
-                maxlength="50"
-                tabindex="0"
-                autofocus="true"
-                autocomplete="off"
-                required>
-                <br><br>
-            <label class="legend2" for="fechadeexpedicion"></label>
-            <input class="icampo7"
-                type="text" 
-                id="fechaex" 
-                placeholder="Introduce su fecha de expedicion"
-                name="fechadeexpedicion" 
-                minlength="3" 
-                maxlength="50"
-                tabindex="0"
-                autofocus="true"
-                autocomplete="off"
-                required>
-                <br><br>
-            <label class="legend3" for="codigoseguridad"></label>
-            <input class="icampo6"
-                    type="text" 
-                    id="cvv" 
-                    placeholder="CVV"
-                    name="cvv" 
-                    minlength="3" 
-                    maxlength="50"
-                    tabindex="0"
-                    autofocus="true"
-                    autocomplete="off"
-                    required>
-                    <br><br>
-            <button class="bttn6 button-main " id="guardar">guardar</button>
-            </form>
-    </section> 
+            <article>
+                <h2 class="title5">configuración  Tarjeta debito</h2>
+                <form id="tarjetadebito">
+                    <label class="legend" for="tarjetadebito"></label>
+                    <input class="icampo"
+                        type="text" 
+                        id="ndebito" 
+                        name="tarjetadebito" 
+                        placeholder="Introduce su numero de tarjeta debito"
+                        minlength="3" 
+                        maxlength="50"
+                        tabindex="0"
+                        autofocus="true"
+                        autocomplete="off"
+                        required>
+                        <br><br>
+                    <label class="legend2" for="fechadeexpedicion"></label>
+                    <input class="icampo2"
+                        type="date" 
+                        id="fechaex" 
+                        placeholder="Introduce su fecha de expedicion"
+                        name="fechadeexpedicion" 
+                        max="2022-09-27"
+                        tabindex="0"
+                        autofocus="true"
+                        autocomplete="off"
+                        required>
+                        <br><br>
+                    <label class="legend3" for="codigoseguridad"></label>
+                    <input class="icampo3"
+                            type="text" 
+                            id="cvc" 
+                            placeholder="CVC"
+                            name="cvv" 
+                            minlength="3" 
+                            maxlength="50"
+                            tabindex="0"
+                            autofocus="true"
+                            autocomplete="off"
+                            required>
+                            <br><br>
+                    <div class="guardar"><button class="bttn7 button-main" id="guardar">guardar</button></div>
+                    </form>
+            </article>
     </main>
     <footer class="footer">
         <h4 class="footer-text">Derechos reservados de <a href="https://www.uniempresarial.edu.co/" target="_blank" >Uniempresarial</a></h4>
@@ -83,6 +81,6 @@
             </svg>
         </a>
     </footer>
-    <script src=""></script>
+    <script src="../scripts/tarjetaDebito.js"></script>
 </body>
 </html>

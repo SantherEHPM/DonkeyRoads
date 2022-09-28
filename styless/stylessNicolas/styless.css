@@ -34,10 +34,6 @@ check boxs: ibox
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 
-}.title3{
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    margin-top: 0px;
 }
 
 .title4{
@@ -50,6 +46,19 @@ check boxs: ibox
     left: 25%;
     position: relative;
 
+}
+.title6{
+    margin: 0 auto;
+    padding: 1vw;
+    font-size: 40px;
+    min-height:40px;
+    min-width: 40px;
+    
+}
+.parter{
+    position: relative;
+    text-align: center;
+    top: 6vw;
 }
 
 
@@ -79,6 +88,8 @@ check boxs: ibox
     top: 110px;
     left: -10%;
     font-size: 20px;
+    min-width: 320px;
+    min-height: 40px;
     
 }
 .textn2{
@@ -118,22 +129,34 @@ check boxs: ibox
 }   
 
 .bttn7{
-    margin-top: 40px;
+   
     position: relative;
     height: 2vw;
     width: 40vw ;
-    left: 5%;    
-}
+    top: 0 auto;
+    top: 8px;
+    display: inline-block;
 
-.btnn8{
-        float: right;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 20px;       
-        margin-top: 60px;
-        margin-right: 430px;
-        
-        
-    }    
+}
+.bttn8{
+   
+    position: relative;
+    height: 2vw;
+    width: 40vw ;
+    top: 0 auto;
+    top: 8px;   
+    display: inline-block;
+
+}
+.bttn9{
+   
+    position: relative;
+    height: 2vw;
+    width: 40vw ;
+    top: 0 auto;
+    top: 8px;
+
+}
 
 .icampo{
     top: 30px;
@@ -143,6 +166,8 @@ check boxs: ibox
     width: 30vw ;
     left: 15%;
     border-radius: 10px;
+     min-width: 320px;
+    min-height: 40px;
 }
 .icampo2{
     top: 25px;
@@ -152,6 +177,8 @@ check boxs: ibox
     width: 30vw ;
     left: 15%;
     border-radius: 10px;
+    min-width: 320px;
+    min-height: 40px;
 }
 .icampo3{
     top: 15px;
@@ -161,6 +188,8 @@ check boxs: ibox
     width: 30vw ;
     left: 15%;
     border-radius: 10px;
+    min-width: 320px;
+    min-height: 40px;
 }
 .icampo5{
     margin-top: 20px;
@@ -169,6 +198,8 @@ check boxs: ibox
     width: 26vw ;
     left: 17%;
     border-radius: 10px;
+    min-width: 320px;
+    min-height: 40px;
 }
 .icampo6{
     margin-top: 20px;
@@ -177,6 +208,8 @@ check boxs: ibox
     width: 26vw ;
     left: 17%;
     border-radius: 10px;
+    min-width: 320px;
+    min-height: 40px;
 }
 .icampo7{
     margin-top: 20px;
@@ -185,11 +218,18 @@ check boxs: ibox
     width: 26vw ;
     left: 17%;
     border-radius: 10px;
+    min-width: 320px;
+    min-height: 40px;
 }
 
 input::placeholder{
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
+}
+.guardar{
+    left: 4vw;
+    position: relative;
+    text-align: center;
 }
 

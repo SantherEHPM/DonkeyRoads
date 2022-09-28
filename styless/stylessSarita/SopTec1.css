@@ -85,7 +85,124 @@ a{
 .header-icon{ 
   height: 7vh;
 }
-.titulo{
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(90deg, var(--grey) 31px, transparent 1px) 50%, linear-gradient(180deg, var(--grey) 31px, var(--blue) 1px) 50%;
+  background-size: 32px 32px;
+  color: var(--dark);
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+.chat-soporte {
+	position: absolute;
+	bottom: calc(100% + 1rem);
+	right: 0;
+	width: 420px;
+	border-radius: .5rem;
+	overflow: hidden;
+	box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .1);
+/*	transform: scale(0);*/
+	transform-origin: bottom right;
+	transition: .2s;
+}
+.chat-soporte .show {
+	transform: scale(1);
+}
+.chat-content {
+	background: var(--grey);
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	grid-row-gap: 1rem;
+	max-height: 300px;
+	overflow-y: auto;
+}
+.msj-item {
+	width: 90%;
+	padding: 1rem;
+}
+.msj-item.enviado {
+	align-self: flex-end;
+	background: var(--blue);
+	color: var(--white);
+	border-radius: .75rem 0 .75rem .75rem;
+}
+.msj-item.recibido {
+	background: var(--white);
+	border-radius: 0 .75rem .75rem .75rem;
+	box-shadow: .25rem .25rem 1.5rem rgba(0, 0, 0, .05);
+}
+.item-tiempo {
+	float: right;
+	font-size: .75rem;
+	margin-top: .5rem;
+	display: inline-block;
+}
+.barra-envio{
+	background: var(--white);
+	padding: .75rem 1.5rem;
+}
+.form {
+	display: flex;
+	align-items: center;
+	background: var(--grey);
+	border-radius: .5rem;
+	padding: .5rem 1.25rem;
+}
+.input-msj {
+	background: transparent;
+	outline: none;
+	border: none;
+	resize: none;
+	scrollbar-width: none;
+}
+.input-msj::-webkit-scrollbar {
+	display: none;
+}
+.enviar {
+	font-size: 1.25rem;
+	color: var(--blue);
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.chat-no-msj {
+	font-size: 1rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+/*.titulo{
   display: flex;
   padding: 20px;
     flex-wrap: wrap;
@@ -162,12 +279,13 @@ a{
 .footer{
   padding: 1%;
   text-align: center;
-  /* */
+  /**
   height: 10vh;
   color: var(--contrast-color);
   background-color: var(--dark-color);
   text-decoration: none;
 }
+*/
 .footer *{
   color: var(--contrast-color);
 }

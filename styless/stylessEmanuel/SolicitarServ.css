@@ -1,0 +1,15 @@
+@import "/styless/styless-basic.css";
+h1{
+    text-align: center;
+}
+fieldset{
+    width: 300px;
+    margin: auto;
+}
+
+label{
+    text-align: center;
+}
+article{
+    text-align: center;
+}
